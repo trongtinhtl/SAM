@@ -207,6 +207,38 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\css\customizer_preview.css" />
+    <Content Include="Assets\css\editor-style.css" />
+    <Content Include="Assets\css\slider.css" />
+    <Content Include="Assets\css\style.css" />
+    <Content Include="Assets\images\logo.png" />
+    <Content Include="Assets\js\template\flexslider.min.js" />
+    <Content Include="Assets\js\template\functions.js" />
+    <Content Include="Assets\js\template\jquery.flexslider.js" />
+    <Content Include="Assets\plugins\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\js\template\customizer.js" />
+    <Content Include="Assets\js\template\navigation.js" />
+    <Content Include="Assets\js\template\plugin-enhancements.js" />
+    <Content Include="Assets\js\template\scripts.js" />
+    <Content Include="Assets\js\template\skip-link-focus-fix.js" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-grid.css" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-grid.min.css" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-reboot.css" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-reboot.min.css" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap.css" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap.min.css" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.bundle.js" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.bundle.min.js" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.js" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.min.js" />
+    <Content Include="Assets\plugins\font-awesome\font-awesome.css" />
+    <Content Include="Assets\plugins\font-awesome\font-awesome.min.css" />
+    <Content Include="Assets\plugins\jquery\jquery-3.3.1.min.js" />
+    <Content Include="Assets\plugins\jquery\jquery-3.3.1.slim.min.js" />
+    <Content Include="Assets\plugins\jquery\jquery-migrate.min.js" />
+    <Content Include="Assets\plugins\jquery\jquery.validate.js" />
+    <Content Include="Assets\plugins\jquery\jquery.validate.min.js" />
+    <Content Include="Assets\plugins\jquery\jquery.validate.unobtrusive.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -220,6 +252,21 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-grid.css.map" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-grid.min.css.map" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-reboot.css.map" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap.css.map" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap.min.css.map" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.bundle.js.map" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.js.map" />
+    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.min.js.map" />
+    <Content Include="Assets\plugins\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\plugins\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\plugins\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\plugins\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\plugins\fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
