@@ -1,0 +1,1 @@
+﻿$('div#froala-editor').froalaEditor();

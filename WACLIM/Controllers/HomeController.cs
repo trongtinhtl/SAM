@@ -26,5 +26,10 @@ namespace WACLIM.Controllers
 
             return View();
         }
-    }
+
+		public ActionResult Admin()
+		{
+			return View();
+		}
+	}
 }
