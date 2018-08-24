@@ -207,6 +207,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Admin\images\logo.png" />
     <Content Include="Assets\Admin\js\admin.js" />
     <Content Include="Assets\Admin\js\bundle.js" />
     <Content Include="Assets\Admin\css\font-awesome.css" />
