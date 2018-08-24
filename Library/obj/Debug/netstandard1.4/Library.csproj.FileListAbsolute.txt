@@ -1,7 +1,0 @@
-D:\RUBI\Library\bin\Debug\netstandard1.4\Library.deps.json
-D:\RUBI\Library\obj\Debug\netstandard1.4\Library.csprojResolveAssemblyReference.cache
-D:\RUBI\Library\obj\Debug\netstandard1.4\Library.AssemblyInfo.cs
-D:\RUBI\Library\bin\Debug\netstandard1.4\Library.dll
-D:\RUBI\Library\bin\Debug\netstandard1.4\Library.pdb
-D:\RUBI\Library\obj\Debug\netstandard1.4\Library.dll
-D:\RUBI\Library\obj\Debug\netstandard1.4\Library.pdb

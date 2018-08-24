@@ -1,0 +1,35 @@
+﻿
+@{
+	ViewBag.Title = "Thêm bản tin";
+	Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="Vmodule" vmodule-name="thembantin">
+	<div id="mainContent">
+		<div class="row gap-20 masonry pos-r" style="position: relative; height: 1107px;">
+			<div class="masonry-sizer col-md-6"></div>
+			<div class="masonry-item col-md-12" style="position: absolute; left: 0%; top: 0px;">
+				<div class="bgc-white p-20 bd">
+					<h6 class="c-grey-900">Basic Form</h6>
+					<div class="mT-30">
+						<form>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Password</label>
+								<textarea type="text" class="form-control" id="froala-editor">
+ 
+                            </textarea>
+							</div>
+							<button type="button" class="btn btn-primary" id="btn">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="~/Assets/js/Admin/thembantin.js"></script>
+	</div>
+</div>

@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Library.Object
 {
-    class BanTinViewModel : NodeInfo
+    public class BanTinViewModel : NodeInfo
     {
+
+
     }
 }

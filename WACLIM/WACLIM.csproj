@@ -46,6 +46,24 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MongoDB.AspNet.Identity">
+      <HintPath>..\..\Work\Vietbando\Solutions\TMCP\DLL\MongoDB.AspNet.Identity.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\..\Work\Vietbando\Solutions\TMCP\DLL\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\..\Work\Vietbando\Solutions\TMCP\DLL\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core">
+      <HintPath>..\..\Work\Vietbando\Solutions\TMCP\DLL\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Legacy">
+      <HintPath>..\..\Work\Vietbando\Solutions\TMCP\DLL\MongoDB.Driver.Legacy.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Web">
+      <HintPath>..\..\Work\Vietbando\Solutions\TMCP\DLL\MongoDB.Web.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -195,8 +213,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TestAjaxController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -204,6 +224,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -227,6 +248,10 @@
     <Content Include="Assets\Admin\css\style.css" />
     <Content Include="Assets\Admin\css\themify-icons.css" />
     <Content Include="Assets\Admin\js\vendor.js" />
+    <Content Include="Assets\js\Admin\thembantin.js" />
+    <Content Include="Assets\js\Ajax\BanTinAjax.js" />
+    <Content Include="Assets\js\Ajax\TestAjax.js" />
+    <Content Include="Assets\js\Ajax\ThanhVienAjax.js" />
     <Content Include="Assets\css\custom.css" />
     <Content Include="Assets\css\customizer_preview.css" />
     <Content Include="Assets\css\editor-style.css" />
@@ -235,9 +260,11 @@
     <Content Include="Assets\images\admin.jpg" />
     <Content Include="Assets\images\logo.png" />
     <Content Include="Assets\js\Admin\index.js" />
+    <Content Include="Assets\js\GLOBAL.js" />
     <Content Include="Assets\js\template\flexslider.min.js" />
     <Content Include="Assets\js\template\functions.js" />
     <Content Include="Assets\js\template\jquery.flexslider.js" />
+    <Content Include="Assets\js\vmodule.js" />
     <Content Include="Assets\plugins\fonts\fontawesome-webfont.svg" />
     <Content Include="Assets\js\template\customizer.js" />
     <Content Include="Assets\js\template\navigation.js" />
@@ -378,12 +405,26 @@
     <Content Include="Assets\plugins\froala\js\third_party\embedly.min.js" />
     <Content Include="Assets\plugins\froala\js\third_party\image_aviary.min.js" />
     <Content Include="Assets\plugins\froala\js\third_party\spell_checker.min.js" />
+    <Content Include="Assets\plugins\html2canvas\html2canvas.js" />
+    <Content Include="Assets\plugins\jquery-autocomplete\jquery.autocomplete.js" />
+    <Content Include="Assets\plugins\jquery-autocomplete\jquery.autocomplete.min.js" />
+    <Content Include="Assets\plugins\jquery-confirm\jquery-confirm.min.css" />
+    <Content Include="Assets\plugins\jquery-confirm\jquery-confirm.min.js" />
+    <Content Include="Assets\plugins\jquery-loadingModal\css\jquery.loadingModal.css" />
+    <Content Include="Assets\plugins\jquery-loadingModal\js\jquery.loadingModal.js" />
+    <Content Include="Assets\plugins\jquery-loadingModal\js\jquery.loadingModal.min.js" />
+    <Content Include="Assets\plugins\jquery-validation\additional-methods.js" />
+    <Content Include="Assets\plugins\jquery-validation\jquery.validate.js" />
+    <Content Include="Assets\plugins\jquery-validation\localization\messages_vi.js" />
     <Content Include="Assets\plugins\jquery\jquery-3.3.1.min.js" />
     <Content Include="Assets\plugins\jquery\jquery-3.3.1.slim.min.js" />
     <Content Include="Assets\plugins\jquery\jquery-migrate.min.js" />
     <Content Include="Assets\plugins\jquery\jquery.validate.js" />
     <Content Include="Assets\plugins\jquery\jquery.validate.min.js" />
     <Content Include="Assets\plugins\jquery\jquery.validate.unobtrusive.js" />
+    <Content Include="Assets\plugins\notifications\notification.css" />
+    <Content Include="Assets\plugins\notifications\notify-metro.js" />
+    <Content Include="Assets\plugins\notifications\notify.min.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -420,6 +461,8 @@
     <Content Include="Assets\Admin\static\fonts\icons\themify\themify.eot" />
     <Content Include="Assets\Admin\static\fonts\icons\themify\themify.ttf" />
     <Content Include="Assets\Admin\static\fonts\icons\themify\themify.woff" />
+    <Content Include="Config\db.config" />
+    <Content Include="Assets\plugins\jquery-loadingModal\scss\jquery.loadingModal.scss" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -470,9 +513,12 @@
     <Content Include="Views\Home\Admin.cshtml" />
     <Content Include="Views\Shared\_HeaderAdmin.cshtml" />
     <Content Include="Views\Shared\_LeftnavAdmin.cshtml" />
+    <Content Include="Views\Shared\_AccountLayout.cshtml" />
+    <Content Include="Views\Admin\ThemBanTin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Test\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -486,6 +532,12 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library\Library.csproj">
+      <Project>{8300e432-3412-4307-a61c-d4cfaeb002bc}</Project>
+      <Name>Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

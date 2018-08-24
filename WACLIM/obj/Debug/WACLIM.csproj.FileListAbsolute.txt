@@ -236,3 +236,15 @@ E:\Work\WACLIM\obj\Debug\WACLIM.csproj.CoreCompileInputs.cache
 E:\Work\WACLIM\obj\Debug\WACLIM.csproj.CopyComplete
 E:\Work\WACLIM\obj\Debug\WACLIM.dll
 E:\Work\WACLIM\obj\Debug\WACLIM.pdb
+D:\RUBI\WACLIM\bin\MongoDB.AspNet.Identity.dll
+D:\RUBI\WACLIM\bin\MongoDB.Bson.dll
+D:\RUBI\WACLIM\bin\MongoDB.Driver.Core.dll
+D:\RUBI\WACLIM\bin\MongoDB.Driver.dll
+D:\RUBI\WACLIM\bin\MongoDB.Driver.Legacy.dll
+D:\RUBI\WACLIM\bin\MongoDB.Web.dll
+D:\RUBI\WACLIM\bin\DnsClient.dll
+D:\RUBI\WACLIM\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\RUBI\WACLIM\bin\log4net.dll
+D:\RUBI\WACLIM\bin\System.Buffers.dll
+D:\RUBI\WACLIM\bin\Library.dll
+D:\RUBI\WACLIM\bin\Library.pdb

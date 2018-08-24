@@ -11,6 +11,10 @@
     @Styles.Render("~/Content/admin-layout")
     @Styles.Render("~/Content/admin-plugins")
 
+	<script type="text/javascript">
+        var _WEB_URL = location.origin + '/' + '@Url.Content("~/")';
+	</script>
+
     @Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" crossorigin=\"anonymous\"></script>", "~/bundles/admin-plugins")
     @Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" crossorigin=\"anonymous\"></script>", "~/bundles/admin-layout")
 </head>

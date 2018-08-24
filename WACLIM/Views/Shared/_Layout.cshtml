@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/plugins")
+	@Styles.Render("~/Content/css")
 
+	<script type="text/javascript">
+        var _WEB_URL = location.origin + '/' + '@Url.Content("~/")';
+	</script>
+
+	@Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" crossorigin=\"anonymous\"></script>", "~/bundles/plugins")
+	@Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" crossorigin=\"anonymous\"></script>", "~/bundles/js")
 </head>
 <body>
     <header id="masthead" class="site-header" role="banner">
@@ -269,7 +276,6 @@
             </div>
         </div><!-- .site-info -->
     </footer>
-    @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
 </body>
 </html>

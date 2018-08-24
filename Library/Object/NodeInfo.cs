@@ -7,7 +7,7 @@ namespace Library.Object
     public class NodeInfo
     {
 		public string Id { get; set; }
-		DateTime ngayTao { get; set; }
-		DateTime ngaySua { get; set; }
+		public DateTime ngayTao { get; set; }
+		public DateTime ngaySua { get; set; }
     }
 }
