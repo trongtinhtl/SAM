@@ -1357,20 +1357,6 @@ GLOBAL.utils.getNewGuid = function () {
     );
 }
 
-GLOBAL.utils.getFieldIdOfTaiSan = function (name) {
-    var mapFieldNameTaiSan = {
-        THUADAT: "thuaDatId",
-        NHARIENGLE: "nhaRiengLeId",
-        NHACHUNGCU: "nhaChungCuId",
-        CANHO: "canHoId",
-        CONGTRINHXAYDUNG: "congTrinhXayDungId",
-        CONGTRINHNGAM: "congTrinhNgamId",
-        RUNGTRONG: "rungTrongId",
-        CAYLAUNAM: "cayLauNamId"
-    };
-
-    return mapFieldNameTaiSan[name];
-}
 // #endregion
 
 
@@ -1639,31 +1625,6 @@ $(document).on("keyup", function (event) {
 $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
     $(e.target).closest(".modal").find("#btnAutoFocus").focus();
 });
-
-//bind window events
-window.onerror = function (msg, url, lineNo, columnNo, error) {
-    GLOBAL.utils.loading(false);
-    if (typeof (msg) !== 'object') {
-        var string = msg ? msg.toLowerCase() : msg;
-        var substring = "script error";
-        if (string.indexOf(substring) > -1) {
-            alert('Lỗi chưa xác định: Mở cửa sổ console để xem chi tiết');
-        } else {
-            var message = [
-                'Nội dung lỗi: ' + msg,
-                'Tập tin lỗi: ' + url,
-                'Dòng: ' + lineNo
-                //'Cột: ' + columnNo
-            ];
-            JSON.stringify(error) !== "{}" && message.push({ 'Đối tượng lỗi': JSON.stringify(error) });
-            alert(message.join(' \n ') + '\nVui lòng mở cửa sổ console để xem chi tiết.');
-        }
-    }
-    else {
-        alert('Lỗi chưa xác định: Mở cửa sổ console để xem chi tiết');
-    }
-    return false;
-};
 
 $(document).ajaxStart(function () {
     if (GLOBAL.showLoadingEnable) {

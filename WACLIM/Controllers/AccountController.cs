@@ -21,7 +21,21 @@ namespace WACLIM.Controllers
         public AccountController()
         {
         }
-
+        [AllowAnonymous]
+        public ActionResult Account()
+        {
+            return View();
+        }
+        [AllowAnonymous]
+        public ActionResult Dangky()
+        {
+            return View();
+        }
+        [AllowAnonymous]
+        public ActionResult Forgot()
+        {
+            return View();
+        }
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
         {
             UserManager = userManager;

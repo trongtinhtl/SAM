@@ -1,8 +1,4 @@
-﻿var WACLIM = {
-	VModule: {}
-};
-
-VModule = {};
+﻿VModule = {};
 VModule.VModuleJsLoader = {};
 VModule.VModuleInterface = {};
 VModule.define = function (vmoduleName, config) {
@@ -42,9 +38,9 @@ VModule.define = function (vmoduleName, config) {
                 var control = null;
 
                 var re = new RegExp(vmoduleName, "g");
-                var query = strQuery.replace(re, `[vmodule-id="${vModule.VModuleId}"]`)
-                                   .replace(/{{VModuleId}}/g, vModule.VModuleId);
-
+                //var query = strQuery.replace(re, `[vmodule-id="${vModule.VModuleId}"]`)
+                //                   .replace(/{{VModuleId}}/g, vModule.VModuleId);
+                var query = "#vmodule-" + vmoduleName;
                 control = $(query);
 
                 if (control.toArray().length > 0) {
@@ -83,9 +79,7 @@ VModule.define = function (vmoduleName, config) {
                 }
             }
         };
-
-        //Gán các hàm & biến của module vào DOM để tiện truy xuất
-        vModule[0].vModuleConfig.Config = config;
+        
 
         //Gọi hàm khởi tạo đăng ký sự kiện
         if (typeof (config.listeners) === "function") {

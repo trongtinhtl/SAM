@@ -228,6 +228,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Account\css\account.css" />
+    <Content Include="Assets\Account\css\auth.css" />
+    <Content Include="Assets\Account\css\bootstrap.min.css" />
+    <Content Include="Assets\Account\js\account.js" />
+    <Content Include="Assets\Account\js\auth.js" />
+    <Content Include="Assets\Account\js\bootstrap.min.js" />
+    <Content Include="Assets\Admin\css\custom.css" />
     <Content Include="Assets\Admin\images\logo.png" />
     <Content Include="Assets\Admin\js\admin.js" />
     <Content Include="Assets\Admin\js\bundle.js" />
@@ -248,6 +255,8 @@
     <Content Include="Assets\Admin\css\style.css" />
     <Content Include="Assets\Admin\css\themify-icons.css" />
     <Content Include="Assets\Admin\js\vendor.js" />
+    <Content Include="Assets\images\drop.png" />
+    <Content Include="Assets\images\snow.png" />
     <Content Include="Assets\js\Admin\thembantin.js" />
     <Content Include="Assets\js\Ajax\BanTinAjax.js" />
     <Content Include="Assets\js\Ajax\TestAjax.js" />
@@ -265,6 +274,8 @@
     <Content Include="Assets\js\template\functions.js" />
     <Content Include="Assets\js\template\jquery.flexslider.js" />
     <Content Include="Assets\js\vmodule.js" />
+    <Content Include="Assets\plugins\particles\app.js" />
+    <Content Include="Assets\plugins\particles\particles.js" />
     <Content Include="Assets\plugins\fonts\fontawesome-webfont.svg" />
     <Content Include="Assets\js\template\customizer.js" />
     <Content Include="Assets\js\template\navigation.js" />
@@ -425,6 +436,7 @@
     <Content Include="Assets\plugins\notifications\notification.css" />
     <Content Include="Assets\plugins\notifications\notify-metro.js" />
     <Content Include="Assets\plugins\notifications\notify.min.js" />
+    <Content Include="Assets\plugins\particles\stats.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -508,13 +520,15 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Shared\_AdminLayout2.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Home\Admin.cshtml" />
     <Content Include="Views\Shared\_HeaderAdmin.cshtml" />
     <Content Include="Views\Shared\_LeftnavAdmin.cshtml" />
     <Content Include="Views\Shared\_AccountLayout.cshtml" />
     <Content Include="Views\Admin\ThemBanTin.cshtml" />
+    <Content Include="Views\Account\Account.cshtml" />
+    <Content Include="Views\Account\Forgot.cshtml" />
+    <Content Include="Views\Account\Dangky.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

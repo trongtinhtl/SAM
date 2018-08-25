@@ -248,3 +248,9 @@ D:\RUBI\WACLIM\bin\log4net.dll
 D:\RUBI\WACLIM\bin\System.Buffers.dll
 D:\RUBI\WACLIM\bin\Library.dll
 D:\RUBI\WACLIM\bin\Library.pdb
+E:\Work\WACLIM\bin\Library.dll
+E:\Work\WACLIM\bin\DnsClient.dll
+E:\Work\WACLIM\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Work\WACLIM\bin\log4net.dll
+E:\Work\WACLIM\bin\System.Buffers.dll
+E:\Work\WACLIM\bin\Library.pdb
