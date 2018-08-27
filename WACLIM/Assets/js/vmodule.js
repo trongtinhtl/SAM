@@ -38,9 +38,7 @@ VModule.define = function (vmoduleName, config) {
                 var control = null;
 
                 var re = new RegExp(vmoduleName, "g");
-                //var query = strQuery.replace(re, `[vmodule-id="${vModule.VModuleId}"]`)
-                //                   .replace(/{{VModuleId}}/g, vModule.VModuleId);
-                var query = "#vmodule-" + vmoduleName;
+                var query = strQuery.replace(vmoduleName, "#vmodule-" + vmoduleName);
                 control = $(query);
 
                 if (control.toArray().length > 0) {

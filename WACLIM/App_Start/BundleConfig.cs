@@ -10,10 +10,10 @@ namespace WACLIM
 			#region WEB
 			bundles.Add(new ScriptBundle("~/bundles/plugins").Include(
                         "~/Assets/plugins/jquery/jquery-3.3.1.min.js",
-                        "~/Assets/plugins/jquery/ jquery-migrate.min.js",
+                        "~/Assets/plugins/jquery/jquery-migrate.min.js",
                         "~/Assets/plugins/jquery-validation/jquery.validate.js",
                         "~/Assets/plugins/jquery-validation/localization/messages_vi.js",
-                        "~/Assets/plugins/bootstrap-4.0.0/bootstrap.min.js",
+                        "~/Assets/plugins/bootstrap/js/bootstrap.min.js",
 						"~/Assets/plugins/jquery-loadingModal/js/jquery.loadingModal.js",
 						"~/Assets/js/template/flexslider.min.js",
                         "~/Assets/js/template/functions.js"
@@ -28,7 +28,7 @@ namespace WACLIM
 						));
 
 			bundles.Add(new StyleBundle("~/Content/plugins").Include(
-                      "~/Assets/plugins/bootstrap-4.0.0/css/bootstrap.min.css",
+                      "~/Assets/plugins/bootstrap/css/bootstrap.min.css",
                       "~/Assets/plugins/font-awesome/font-awesome.css",
 					  "~/Assets/plugins/jquery-loadingModal/css/jquery.loadingModal.css"
 					  ));
@@ -45,16 +45,18 @@ namespace WACLIM
 			#region Trang Admin
 			bundles.Add(new ScriptBundle("~/bundles/admin-plugins").Include(
 						"~/Assets/plugins/jquery/jquery-3.3.1.min.js",
-						"~/Assets/plugins/jquery/ jquery-migrate.min.js",
+                        "~/Assets/plugins/bootstrap/js/bootstrap.min.js",
                         "~/Assets/plugins/froala/js/froala_editor.pkgd.min.js",
                         "~/Assets/plugins/froala/js/languages/vi.js",
-                        "~/Assets/plugins/jquery-loadingModal/js/jquery.loadingModal.js"
+                        //"~/Assets/plugins/jquery-loadingModal/js/jquery.loadingModal.js",
+                        "~/Assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"
                        ));
 
 			bundles.Add(new StyleBundle("~/Content/admin-plugins").Include(
 						"~/Assets/plugins/froala/css/froala_editor.pkgd.min.css",
 						"~/Assets/plugins/froala/css/froala_style.min.css",
-                        "~/Assets/plugins/jquery-loadingModal/css/jquery.loadingModal.css"
+                        "~/Assets/plugins/jquery-loadingModal/css/jquery.loadingModal.css",
+                        "~/Assets/plugins/perfect-scrollbar/perfect-scrollbar.css"
                       ));
 
 			bundles.Add(new ScriptBundle("~/bundles/admin-layout").Include(
@@ -80,7 +82,7 @@ namespace WACLIM
                         "~/Assets/plugins/jquery/ jquery-migrate.min.js",
                         "~/Assets/plugins/jquery-validation/jquery.validate.js",
                         "~/Assets/plugins/jquery-validation/localization/messages_vi.js",
-                        "~/Assets/plugins/bootstrap-4.0.0/bootstrap.min.js",
+                        "~/Assets/plugins/bootstrap/js/bootstrap.min.js",
                         "~/Assets/plugins/particles/particles.js",
                         "~/Assets/plugins/particles/app.js",
                         "~/Assets/plugins/particles/stats.js",
@@ -88,7 +90,7 @@ namespace WACLIM
                         ));
 
             bundles.Add(new StyleBundle("~/Content/account").Include(
-                      "~/Assets/plugins/bootstrap-4.0.0/css/bootstrap.min.css",
+                      "~/Assets/plugins/bootstrap/css/bootstrap.min.css",
                       "~/Assets/plugins/font-awesome/font-awesome.css",
                       "~/Assets/Account/css/auth.css"
                       ));

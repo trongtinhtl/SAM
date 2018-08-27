@@ -257,6 +257,8 @@
     <Content Include="Assets\Admin\js\vendor.js" />
     <Content Include="Assets\images\drop.png" />
     <Content Include="Assets\images\snow.png" />
+    <Content Include="Assets\js\Admin\quanlybantin.js" />
+    <Content Include="Assets\js\Admin\quanlythanhvien.js" />
     <Content Include="Assets\js\Admin\thembantin.js" />
     <Content Include="Assets\js\Ajax\BanTinAjax.js" />
     <Content Include="Assets\js\Ajax\TestAjax.js" />
@@ -282,16 +284,16 @@
     <Content Include="Assets\js\template\plugin-enhancements.js" />
     <Content Include="Assets\js\template\scripts.js" />
     <Content Include="Assets\js\template\skip-link-focus-fix.js" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-grid.css" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-grid.min.css" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-reboot.css" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-reboot.min.css" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap.css" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap.min.css" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.bundle.js" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.bundle.min.js" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.js" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.min.js" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap.css" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.min.js" />
     <Content Include="Assets\plugins\font-awesome\font-awesome.css" />
     <Content Include="Assets\plugins\font-awesome\font-awesome.min.css" />
     <Content Include="Assets\plugins\froala\css\froala_editor.css" />
@@ -437,6 +439,8 @@
     <Content Include="Assets\plugins\notifications\notify-metro.js" />
     <Content Include="Assets\plugins\notifications\notify.min.js" />
     <Content Include="Assets\plugins\particles\stats.js" />
+    <Content Include="Assets\plugins\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="Assets\plugins\perfect-scrollbar\perfect-scrollbar.min.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -450,16 +454,16 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-grid.css.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-grid.min.css.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-reboot.css.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-reboot.min.css.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap.css.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap.min.css.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.bundle.js.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.bundle.min.js.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.js.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.min.js.map" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.min.js.map" />
     <Content Include="Assets\plugins\fonts\fontawesome-webfont.eot" />
     <Content Include="Assets\plugins\fonts\fontawesome-webfont.ttf" />
     <Content Include="Assets\plugins\fonts\fontawesome-webfont.woff" />
@@ -529,6 +533,8 @@
     <Content Include="Views\Account\Account.cshtml" />
     <Content Include="Views\Account\Forgot.cshtml" />
     <Content Include="Views\Account\Dangky.cshtml" />
+    <Content Include="Views\Admin\QuanLyBanTin.cshtml" />
+    <Content Include="Views\Admin\QuanLyThanhVien.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

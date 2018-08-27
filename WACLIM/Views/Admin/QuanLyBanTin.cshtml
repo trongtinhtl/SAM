@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Quản lý bản tin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="modal" id="mdlThemBanTin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-backdrop="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            @Html.Partial("~/Views/Admin/ThemBanTin.cshtml");
+        </div>       
+    </div>
+</div>
+
+<div class="VModule" vmodule-name="quanlybantin" id="vmodule-quanlybantin">
+    <div id="mainContent">
+        <div class="full-container">
+            <div class="peer bdR w-100" style="height:calc(100vh - 65px)">
+                <div class="layers h-100">
+                    <div class="bdB layer w-100">
+                        <div class="peers fxw-nw jc-sb ai-c pY-10 pX-30 bgc-white">
+                            <div class="peers custom-toolbar">
+                                <a href="javascript:void(0);" class="peer td-n c-green-500 cH-blue-500 fsz-md mR-30" title="Thêm bản tin" id="btnAddBanTin" data-toggle="modal">
+                                    <i class="ti-file"></i>
+                                </a>
+                                <a href="javascript:void(0);" class="peer td-n c-purple-500 cH-blue-500 fsz-md mR-30" title="">
+                                    <i class="ti-pencil"></i>
+                                </a>
+                                <a href="javascript:void(0);" class="peer td-n c-red-500 cH-blue-500 fsz-md mR-30" title="">
+                                    <i class="ti-trash"></i>
+                                </a>
+                                <div class="search-box">
+                                    <a class="search-toggle no-pdd-right c-blue-500 mR-15">
+                                        <i class="search-icon ti-search pdd-right-10 "></i>
+                                        <i class="search-icon-close ti-close pdd-right-10"></i>
+                                    </a>
+                                </div>
+                                <div class="search-input">
+                                    <input class="form-control" type="text" placeholder="Search...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer w-100 fxg-1 scrollable pos-r ps ps--active-y list-view-custom" id="listBanTin">
+                        @for (int i = 0; i < 10; i++)
+                        {
+                            <div class="peers fxw-nw ai-c p-20 bdB bgc-white bgcH-grey-50 cur-p">
+                                <div class="peer">
+                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="" class="w-3r h-3r bdrs-50p">
+                                </div>
+                                <div class="peer peer-greed pL-20">
+                                    <h6 class="mB-0 lh-1 fw-400">John Doe</h6>
+                                    <small class="lh-1 c-green-500">Online</small>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="~/Assets/js/Admin/quanlybantin.js"></script>
+</div>

@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Thêm bản tin";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    //Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="VModule" vmodule-name="thembantin" id="vmodule-thembantin">
@@ -52,7 +52,9 @@
                         <label for="noiDungBanTin">Nội dung</label>
                         <textarea type="text" class="form-control bdc-grey-200" id="noiDungBanTin" name="noiDung"></textarea>
                     </div>
-                    <button type="button" class="btn btn-primary" id="btnThemBanTin">Thêm bài viết</button>
+                    <div class="text-right">
+                        <button type="button" class="btn btn-primary" id="btnThemBanTin">Thêm bài viết</button>
+                    </div>
                 </form>
             </div>
         </div>

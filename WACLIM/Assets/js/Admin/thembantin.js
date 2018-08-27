@@ -19,12 +19,13 @@
 		this.control
 			({
 				'thembantin': {
-					afterrender: this.onAfterrender,
+                    afterrender: this.onAfterrender
 				},
 			})
-	},
+    },
+
 	onAfterrender: function () {
 		
-	}
-	
+    },
+    
 })

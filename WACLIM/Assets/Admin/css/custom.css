@@ -4,3 +4,74 @@
     border-bottom: 1px solid rgba(0,0,0,.0625) !important;
     border-top: 3px solid #03a9f4 !important;
 }
+
+
+.custom-toolbar a {
+    font-size: 1.3rem !important;
+}
+
+.custom-toolbar .search-box .search-icon-close {
+    display: none;
+}
+
+.custom-toolbar .search-box.active .search-icon {
+    display: none;
+}
+
+.custom-toolbar .search-box.active .search-icon-close {
+    display: inline-block;
+}
+
+.custom-toolbar .search-input {
+    display: none;
+}
+
+    .custom-toolbar .search-input.active {
+        display: inline-block;
+    }
+
+    .custom-toolbar .search-input input {
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        font-size: 18px;
+        outline: none;
+        padding: 3px;
+    }
+
+.list-view-custom .active {
+    background: #d3eafd !important;
+}
+
+.black-ribon {
+    background: #03a9f4;
+}
+
+.corner-ribon {
+    text-align: center;
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+}
+.twt-feed.blue-bg {
+    background: #58C9F3;
+}
+
+
+.twt-feed {
+    -webkit-border-radius: 4px 4px 0 0;
+    color: #FFFFFF;
+    padding: 40px 10px 10px;
+    position: relative;
+    min-height: 170px;
+}
+.twt-feed .wtt-mark {
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 160px;
+    position: absolute;
+    top: 10px;
+    left: 40%;
+}
