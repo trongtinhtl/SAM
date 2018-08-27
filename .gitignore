@@ -1,3 +1,11 @@
-/packages
-/.vs
-/WACLIM/Files
+packages/
+bin/
+obj/
+*.suo
+*.bak
+*.user
+*.log
+*.pdb
+*.pubxml
+.vs/
+*.db

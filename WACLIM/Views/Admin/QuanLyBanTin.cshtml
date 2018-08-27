@@ -3,6 +3,20 @@
     ViewBag.Title = "Quản lý bản tin";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+@using WACLIM.Models
+@model  VModuleSettings
+@{
+    var id = "";
+    var name = "";
+    var jsonSettings = "";
+    if (Model != null)
+    {
+        id = Model.Id ?? "";
+        name = Model.Name ?? "";
+    }
+
+    var vModuleId = Guid.NewGuid().ToString();
+}
 
 <div class="modal" id="mdlThemBanTin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-backdrop="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -12,7 +26,7 @@
     </div>
 </div>
 
-<div class="VModule" vmodule-name="quanlybantin" id="vmodule-quanlybantin">
+<div class="VModule" vmodule-name="quanlybantin" id="@id" name="@name" vmodule-id="@vModuleId" vmodule-settings="@jsonSettings">
     <div id="mainContent">
         <div class="full-container">
             <div class="peer bdR w-100" style="height:calc(100vh - 65px)">

@@ -2,7 +2,7 @@
 VModule.VModuleJsLoader = {};
 VModule.VModuleInterface = {};
 VModule.define = function (vmoduleName, config) {
-	VModule.VModuleJsLoader[vmoduleName] = function (jObj) {
+    VBDLIS.VModule.VModuleJsLoader[vmoduleName] = function (jObj) {
         var vModule = VModule.getVModule(jObj);
 
         if (!config) {
@@ -38,8 +38,9 @@ VModule.define = function (vmoduleName, config) {
                 var control = null;
 
                 var re = new RegExp(vmoduleName, "g");
-				var query = strQuery.replace(re, `[vmodule-id="${vModule.VModuleId}"]`)
-					.replace(/{{VModuleId}}/g, vModule.VModuleId);
+                var query = strQuery.replace(re, `[vmodule-id="${vModule.VModuleId}"]`)
+                                   .replace(/{{VModuleId}}/g, vModule.VModuleId);
+
                 control = $(query);
 
                 if (control.toArray().length > 0) {
@@ -78,7 +79,9 @@ VModule.define = function (vmoduleName, config) {
                 }
             }
         };
-        
+
+        //Gán các hàm & biến của module vào DOM để tiện truy xuất
+        vModule[0].vModuleConfig.Config = config;
 
         //Gọi hàm khởi tạo đăng ký sự kiện
         if (typeof (config.listeners) === "function") {
@@ -90,8 +93,8 @@ VModule.define = function (vmoduleName, config) {
     };
 
     $(document.currentScript).on('load', function (e) {
-		if (this.parentElement) {
-			VModule.VModuleJsLoader[vmoduleName]($(this.parentElement));
+        if (this.parentElement) {
+            VBDLIS.VModule.VModuleJsLoader[vmoduleName]($(this.parentElement));
         }
     });
 };
@@ -221,7 +224,153 @@ VModule.getVModule = function (jObject) {
     }
     return vModule;
 };
+VModule.OnChangeData = function (vModule, type) {
+    var value = vModule.val();
+    var new_data = [{
+        text: 'Không có dữ liệu'
+    }];
+    if (value && value.length !== 0) {
+        if (!(value instanceof Array)) {
+            value = [value];
+        }
 
+        //Tự động phát sinh số _id tạm để xử lý cho dễ
+        for (var i = 0; i < value.length; i++) {
+            value[i]._id = i + 1;
+        }
+
+        var data = value.map(function (item, index) {
+            return VBDLIS.BienDong.TaoTree(type, item);
+        });
+        new_data = data;
+    }
+
+    vModule.find('#tree' + VBDLIS.ToTitle(type)).jstree(true).settings.core.data = new_data;
+    vModule.find('#tree' + VBDLIS.ToTitle(type)).jstree(true).refresh(false, true);
+};
+VModule.OnSelectedItem = function (vModule, data, multiselect, type, parentType) {
+    if (data && data.Value) {
+        var ids = data.Value.map(item => item[VBDLIS.ToCamel(type, { suffixes: 'Id' })]);
+
+        DanhMucAjax['Get' + VBDLIS.ToTitle(type) + 'ByIds'](ids, function (data) {
+            if (data && data.Value) {
+                data = data.Value || [];
+
+                if (!(data instanceof Array)) {
+                    data = [data];
+                }
+
+                if (multiselect) {
+                    if (!vModule[0].value) {
+                        vModule[0].value = data;
+                    }
+                    else
+                    {
+                        for (var i = 0; i < data.length; i++) {
+                            var isExist = false;
+                            if (vModule[0].value) {
+                                isExist = vModule[0].value.filter(function (x) {
+                                    return x.Id === data[i].Id;
+                                }).length > 0;
+                            }
+                            if (!isExist) {
+                                vModule[0].value.push(data[i]);
+                            }
+                        }
+                        
+                    }
+                }
+                else {
+                    vModule[0].value = data;
+                }
+                vModule.change();
+            }
+            else {
+                GLOBAL.utils.showMessage.show({ icon: GLOBAL.utils.showMessage.UNSUCCESS, msg: 'Không tải được dữ liệu. ' + data.Error });
+            }
+        });
+        if (parentType) {
+            $('#mdlTraCuu' + VBDLIS.ToTitle(parentType) + '-' + vModule.VModuleId).modal('hide');
+        } else {
+            $('#mdlTraCuu' + VBDLIS.ToTitle(type) + '-' + vModule.VModuleId).modal('hide');
+        }
+    }
+};
+VModule.OnAddData = function (vModule, data, multiselect, type) {
+    var value = vModule.val();
+    if (!value) {
+        value = [];
+    }
+    var currentTreeData = vModule.find('#tree' + VBDLIS.ToTitle(type)).jstree(true).get_json("#", { no_state: true, no_id: true, no_li_attr: true, no_a_attr: true });
+    if (currentTreeData.length > 0 && currentTreeData[0].text === "Không có dữ liệu") {
+        currentTreeData.splice(0, 1);
+    }
+    if (multiselect) {
+        value.push(data);
+    }
+    else {
+        if (currentTreeData.length > 0) {
+            alertify.warning('bl', 'Chỉ được tồn tại một ' + VBDLIS.ToVi(type) + ', vui lòng sửa ' + VBDLIS.ToVi(type) + ' hiện có.');
+        } else {
+            value[0] = data;
+        }
+    }
+    vModule[0].value = value;
+    vModule.change();
+    $('#mdlChiTiet' + VBDLIS.ToTitle(type) + '-' + vModule.VModuleId).modal('hide');
+};
+VModule.OnUpdateData = function (vModule, data, type) {
+    var value = vModule.val();
+    if (!value) value = [];
+    var searchField = '';
+
+    if (data.Id) {
+        searchField = 'Id';
+    }
+    else {
+        searchField = '_id';
+    }
+
+    if (value instanceof Array) {
+        for (var i = 0; i < value.length; i++) {
+            if (value[i][searchField] === data[searchField]) {
+                value[i] = data;
+                break;
+            }
+        }
+    }
+    else
+    {
+        value = data;
+    }
+    
+    vModule[0].value = value;
+    vModule.change();
+    $('#mdlChiTiet' + VBDLIS.ToTitle(type) + '-' + vModule.VModuleId).modal('hide');
+};
+VModule.GetDefaultValue = function (moduleName) {
+    switch (moduleName) {
+        case 'canhanchitiet':
+            return {
+                gioiTinh: false,
+                loaiDoiTuongId: 1,
+                quocTichId1: 704,
+                quocTichId2: 704,
+                danTocId: 1
+            }
+            break;
+        case 'giaytotuythanchitiet':
+            return {
+                loaiGiayToTuyThanId: 2
+            }
+        case 'diachichitiet':
+            return {
+
+            }
+        default:
+            return {};
+    }
+};
 
  //VModule global function
 (function ($) {

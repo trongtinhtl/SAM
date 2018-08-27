@@ -60,8 +60,8 @@ namespace WACLIM
                       ));
 
 			bundles.Add(new ScriptBundle("~/bundles/admin-layout").Include(
-                        "~/Assets/js/GLOBAL.js",
-                        "~/Assets/js/vmodule.js",
+						"~/Assets/js/vmodule.js",
+						"~/Assets/js/GLOBAL.js",
                         "~/Assets/Admin/js/vendor.js",
                         "~/Assets/Admin/js/bundle.js",
                         "~/Assets/Admin/js/admin.js"
