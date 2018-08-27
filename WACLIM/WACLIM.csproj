@@ -229,6 +229,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Account\css\account.css" />
+    <Content Include="Assets\Account\css\auth.css" />
+    <Content Include="Assets\Account\css\bootstrap.min.css" />
+    <Content Include="Assets\Account\js\account.js" />
+    <Content Include="Assets\Account\js\auth.js" />
+    <Content Include="Assets\Account\js\bootstrap.min.js" />
+    <Content Include="Assets\Admin\css\custom.css" />
     <Content Include="Assets\Admin\images\logo.png" />
     <Content Include="Assets\Admin\js\admin.js" />
     <Content Include="Assets\Admin\js\bundle.js" />
@@ -269,22 +276,22 @@
     <Content Include="Assets\js\template\functions.js" />
     <Content Include="Assets\js\template\jquery.flexslider.js" />
     <Content Include="Assets\js\vmodule.js" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap.css" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.min.js" />
     <Content Include="Assets\plugins\fonts\fontawesome-webfont.svg" />
     <Content Include="Assets\js\template\customizer.js" />
     <Content Include="Assets\js\template\navigation.js" />
     <Content Include="Assets\js\template\plugin-enhancements.js" />
     <Content Include="Assets\js\template\scripts.js" />
     <Content Include="Assets\js\template\skip-link-focus-fix.js" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-grid.css" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-grid.min.css" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-reboot.css" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-reboot.min.css" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap.css" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap.min.css" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.bundle.js" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.bundle.min.js" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.js" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.min.js" />
     <Content Include="Assets\plugins\font-awesome\font-awesome.css" />
     <Content Include="Assets\plugins\font-awesome\font-awesome.min.css" />
     <Content Include="Assets\plugins\froala\css\froala_editor.css" />
@@ -442,16 +449,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-grid.css.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-grid.min.css.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-reboot.css.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap-reboot.min.css.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap.css.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\css\bootstrap.min.css.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.bundle.js.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.bundle.min.js.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.js.map" />
-    <Content Include="Assets\plugins\bootstrap-4.0.0\js\bootstrap.min.js.map" />
     <Content Include="Assets\plugins\fonts\fontawesome-webfont.eot" />
     <Content Include="Assets\plugins\fonts\fontawesome-webfont.ttf" />
     <Content Include="Assets\plugins\fonts\fontawesome-webfont.woff" />
@@ -467,6 +464,16 @@
     <Content Include="Assets\Admin\static\fonts\icons\themify\themify.woff" />
     <Content Include="Config\db.config" />
     <Content Include="Assets\plugins\jquery-loadingModal\scss\jquery.loadingModal.scss" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Assets\plugins\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Assets\plugins\bootstrap\js\bootstrap.min.js.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

@@ -39,10 +39,12 @@ GLOBAL = $.extend({}, {
     },
     validateOptions: {
         errorPlacement: function (error, element) {
+            $(element).addClass('is-invalid-custom');
             GLOBAL.utils.formValidationErrorPlacement(error, element);
         },
         success: function (label, element) {
-            $(element).popover("hide");
+            $(element).removeClass('is-invalid-custom');
+            $(element).tooltip("hide");
         }
     }
 }, GLOBAL);
@@ -357,7 +359,7 @@ GLOBAL.utils.bindFormData = function (form, data) {
 //bindRequiredSignal: Hàm tìm các field required và gán nhãn * lên label
 GLOBAL.utils.bindRequiredSignal = function (jObject) {
     jObject.find('[data-rule-required="true"], [data-rule-date="true"]').closest('.form-group').find('label:not(:has(span))').each((index, label) => {
-        label.innerHTML += '<span class="required-signal">*</span>';
+        label.innerHTML += '<span class="required-signal"> *</span>';
     });
 }
 
@@ -1003,17 +1005,17 @@ GLOBAL.utils.isObjectContainEmptyArray = function (obj) {
 
 //cấu hình mặc định hiện popover cho form validation
 GLOBAL.utils.formValidationErrorPlacement = function (error, element) {
-    var _popover;
-    _popover = $(element).popover({
+    var _tooltip;
+    _tooltip = $(element).tooltip({
         trigger: "manual",
         placement: "auto",
         container: "body",
         animation: false,
-        content: $(error).text(),
-        template: "<div class='popover'><div class='arrow'></div><div class='popover-inner'><div class='popover-content'><p></p></div></div></div>"
+        title: $(error).text(),
+        template: '<div class="tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
     });
-    $(element).popover("show");
-    return setTimeout(function () { $(element).popover("hide"); }, 2000);
+    $(element).tooltip("show");
+    return setTimeout(function () { $(element).tooltip("hide"); }, 2000);
 }
 
 //xử lý kết quả ajax trả về

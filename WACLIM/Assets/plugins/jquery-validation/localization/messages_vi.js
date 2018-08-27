@@ -13,9 +13,9 @@
  * Locale: VI (Vietnamese; Tiếng Việt)
  */
 $.extend( $.validator.messages, {
-	required: "Hãy nhập.",
+	required: "Dữ liệu không đươc để trống.",
 	remote: "Hãy sửa cho đúng.",
-	email: "Hãy nhập email.",
+	email: "Hãy nhập đúng email.",
 	url: "Hãy nhập URL.",
 	date: "Hãy nhập ngày.",
 	dateISO: "Hãy nhập ngày (ISO).",

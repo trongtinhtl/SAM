@@ -1,8 +1,7 @@
 ﻿VModule = {};
 VModule.VModuleJsLoader = {};
-VModule.VModuleInterface = {};
 VModule.define = function (vmoduleName, config) {
-	VModule.VModuleJsLoader[vmoduleName] = function (jObj) {
+    VModule.VModuleJsLoader[vmoduleName] = function (jObj) {
         var vModule = VModule.getVModule(jObj);
 
         if (!config) {
@@ -38,8 +37,9 @@ VModule.define = function (vmoduleName, config) {
                 var control = null;
 
                 var re = new RegExp(vmoduleName, "g");
-				var query = strQuery.replace(re, `[vmodule-id="${vModule.VModuleId}"]`)
-					.replace(/{{VModuleId}}/g, vModule.VModuleId);
+                var query = strQuery.replace(re, `[vmodule-id="${vModule.VModuleId}"]`)
+                                   .replace(/{{VModuleId}}/g, vModule.VModuleId);
+
                 control = $(query);
 
                 if (control.toArray().length > 0) {
@@ -78,7 +78,9 @@ VModule.define = function (vmoduleName, config) {
                 }
             }
         };
-        
+
+        //Gán các hàm & biến của module vào DOM để tiện truy xuất
+        vModule[0].vModuleConfig.Config = config;
 
         //Gọi hàm khởi tạo đăng ký sự kiện
         if (typeof (config.listeners) === "function") {
@@ -90,8 +92,8 @@ VModule.define = function (vmoduleName, config) {
     };
 
     $(document.currentScript).on('load', function (e) {
-		if (this.parentElement) {
-			VModule.VModuleJsLoader[vmoduleName]($(this.parentElement));
+        if (this.parentElement) {
+            VModule.VModuleJsLoader[vmoduleName]($(this.parentElement));
         }
     });
 };
@@ -221,7 +223,6 @@ VModule.getVModule = function (jObject) {
     }
     return vModule;
 };
-
 
  //VModule global function
 (function ($) {

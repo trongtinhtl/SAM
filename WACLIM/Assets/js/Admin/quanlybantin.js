@@ -25,7 +25,7 @@
 
     onAfterrender: function () {
         let that = this;
-
+        this.mdlThemBanTin.modal('show');
         var data = {
             tieuDe : "Phan Trọng tính"
 
@@ -37,8 +37,7 @@
     },
 
     onClick_BtnAddBanTin: function (vModule, btn, e) {
-        e.stopImmediatePropagation();
-        e.preventDefault();
+        console.log(true)
         this.mdlThemBanTin.modal('show');
     },
 
