@@ -52,7 +52,8 @@ namespace WACLIM
                         "~/Assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js",
                         "~/Assets/plugins/jquery-validation/jquery.validate.js",
                         "~/Assets/plugins/jquery-validation/additional-method.js",
-                        "~/Assets/plugins/jquery-validation/localization/messages_vi.js"
+                        "~/Assets/plugins/jquery-validation/localization/messages_vi.js",
+						"~/Assets/plugins/lazyload/jquery.lazy.min.js"
                        ));
 
 			bundles.Add(new StyleBundle("~/Content/admin-plugins").Include(

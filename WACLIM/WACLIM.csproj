@@ -433,6 +433,7 @@
     <Content Include="Assets\plugins\jquery\jquery.validate.js" />
     <Content Include="Assets\plugins\jquery\jquery.validate.min.js" />
     <Content Include="Assets\plugins\jquery\jquery.validate.unobtrusive.js" />
+    <Content Include="Assets\plugins\lazyload\jquery.lazy.min.js" />
     <Content Include="Assets\plugins\notifications\notification.css" />
     <Content Include="Assets\plugins\notifications\notify-metro.js" />
     <Content Include="Assets\plugins\notifications\notify.min.js" />

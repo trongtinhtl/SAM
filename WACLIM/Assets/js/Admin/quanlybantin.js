@@ -6,13 +6,15 @@
         that.mdlThemBanTin = $('#mdlThemBanTin');
         that.vModuleThemBanTin = that.mdlThemBanTin.find('[vmodule-name="thembantin"]')
 
+		that.listBanTin = vModule.find('#listBanTin');
+
     },
     listeners: function () {
         this.control
             ({
                 'quanlybantin': {
                     afterrender: this.onAfterrender,
-                    onChange: this.onChangeValue
+                    changeValue: this.updateView
                 },
                 'quanlybantin #btnAddBanTin': {
                     click: this.onClick_BtnAddBanTin
@@ -23,17 +25,24 @@
             })
     },
 
-    onAfterrender: function () {
-        let that = this;
-        this.mdlThemBanTin.modal('show');
-        var data = {
-            tieuDe : "Phan Trọng tính"
+	onAfterrender: function () {
+		$('.item-bantin').lazy({
+			effect: "fadeIn",
+			effectTime: 2000,
+			threshold: 0
+		});
 
-        }
-        console.log("adjhad")
+		let that = this;
+		that.listBanTin.scroll(function () {
+			if ($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+
+
+			}
+		});
     },
 
-    onChangeValue: function (vModule, data) {
+	onChangeValue: function (vModule, data) {
+
     },
 
     onClick_BtnAddBanTin: function (vModule, btn, e) {

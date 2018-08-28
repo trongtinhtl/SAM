@@ -5,7 +5,6 @@
         this.frmThemBanTin = vModule.find('#frmThemBanTin');
         this.frmThemBanTin.validate(GLOBAL.validateOptions);
 
-
         this.froalaEditor = this.frmThemBanTin.find("#noiDungBanTin");
         this.froalaEditor.froalaEditor({
             height: 200,
@@ -17,12 +16,12 @@
             }
         });       
 	},
+
 	listeners: function () {
 		this.control
 			({
 				'thembantin': {
-                    afterrender: this.onAfterrender,
-                    changeValue: this.setValue
+                    changeValue: this.updateView
                 },
                 'thembantin #btnThemBanTin': {
                     click: this.onClick_BtnThemBanTin
@@ -30,11 +29,20 @@
 			})
     },
 
-    setValue: function (vModule) {
+	updateView: function (vModule) {
         var currentValue = vModule.getValue();
+		if (currentValue == null || currentValue == "") {
+			value = {
+				tieuDe: null,
 
+			};
+			vModule.setValue(value, false);
+		}
 
-
+		GLOBAL.utils.bindFormData(value);
+		if (value.noiDung) {
+			this.froalaEditor.froalaEditor('html.set', value.noiDung);
+		}
     },
 
     validateEditor: function () {
@@ -57,19 +65,17 @@
         }
         return true
     },
-	onAfterrender: function () {
-
-        var string = '<h1> jajfhjasfhjahfjhsajhfj</h1> <img src="../Files/e486349d.jpg"></img>'
-        //this.froalaEditor.froalaEditor('html.set',string);
-
-    },
     onClick_BtnThemBanTin: function (vModule, btn, e) {
 
-        if (this.frmThemBanTin.valid() && this.validateEditor()) {
-            console.log(true)
+		if (this.frmThemBanTin.valid() && this.validateEditor()) {
+			let frmData = GLOBAL.utils.getFormValue();
+			if (!frmData || !frmData.tieuDe || !frmData.tomTat || !frmData.duongDanAnh) return;
+			let content = this.froalaEditor.froalaEditor('html.get');
+			frmData.noiDung = content;
 
+			//TODO : Add database
 
-        }
-       
+			vModule.trigger('db.saved');
+        }       
     }
 })
