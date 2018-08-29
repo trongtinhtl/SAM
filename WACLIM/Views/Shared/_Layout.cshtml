@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    @Styles.Render("~/Content/plugins")
+	@Styles.Render("~/Content/css")
+
+	<script type="text/javascript">
+        var _WEB_URL = location.origin + '/' + '@Url.Content("~/")';
+	</script>
+
+	@Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" crossorigin=\"anonymous\"></script>", "~/bundles/plugins")
+	@Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" crossorigin=\"anonymous\"></script>", "~/bundles/js")
+</head>
+<body>
+    <header id="masthead" class="site-header" role="banner">
+        <div class="site-branding ">
+
+            <div class="top-header container">
+
+                <div class="blaskan-social-menu pull-right">
+                    <div class="menu-social-menu-container">
+                        <ul id="social-menu" class="menu">
+                            <li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="https://www.facebook.com/colorlib"><span>Facebook</span></a></li>
+                            <li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a href="https://twitter.com/colorlib"><span>Twitter</span></a></li>
+                            <li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="https://plus.google.com/+Colorlib"><span>GooglePlus</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-header-form-container pull-right">
+                    <div id="search-header-form" class="search ">
+                        <form role="search" method="get" class="search-form" action="https://colorlib.com/blaskan/">
+                            <input id="search" type="search" name="s" placeholder="">
+                            <label for="search"><i class="fa fa-search" aria-hidden="true"></i></label>
+                        </form>
+                    </div>
+                </div>
+
+
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="container">
+                <a href="#" class="custom-logo-link" rel="home" itemprop="url"><img width="177" height="55" src="~/Assets/images/logo.png" class="custom-logo" alt="Blaskan Demo" itemprop="logo"></a>
+            </div><!-- .container -->
+        </div><!-- .site-branding -->
+
+		<div class="container-navigation">
+			<nav id="site-navigation" class="main-navigation container" role="navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+				<div class="blaskan-main-menu">
+					<ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
+						<li class="menu-item">
+							<a href="#">
+								Giới thiệu
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">
+								Tin tức-giới thiệu
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">
+								Thành viên
+							</a>
+						</li>
+						<li class="menu-item menu-item-has-children">
+							<a href="#">Nghiên cứu</a>
+							<ul class="sub-menu">
+								<li class="menu-item">
+									<a href="#">Đề tài/dự án</a>
+								</li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom">
+									<a href="#">Công bố khoa học</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-43">
+							<a href="#">
+								Tư vấn
+							</a>
+						</li>
+						<li class="menu-item menu-item-has-children">
+							<a href="#">Đào tạo</a>
+							<ul class="sub-menu">
+								<li id="menu-item-47" class="menu-item">
+									<a href="#">Giảng dạy</a>
+								</li>
+								<li id="menu-item-48" class="menu-item">
+									<a href="#">Tập huấn</a>
+								</li>
+								<li class="menu-item  menu-item-has-children">
+									<a href="#">Hướng dẫn</a>
+									<ul class="sub-menu">
+										<li class="menu-item">
+											<a href="#">
+												Đề tài KL/TL đại học
+											</a>
+										</li>
+										<li class="menu-item">
+											<a href="#">
+												Đề tài luận văn sau đại học
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-item">
+							<a href="#">
+								Chia sẽ - trao đổi
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">
+								Liên hệ
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>      
+
+
+        <div class="top-section">
+            <div class="flexslider" style="height: 200px;">
+                <ul class="slides">
+                    <li >
+                        <img width="1920" height="550" src="https://cdn.colorlib.com/activello/wp-content/uploads/sites/10/2012/03/photo-1437915015400-137312b61975-1920x550.jpg" class="attachment-activello-slider size-activello-slider wp-post-image" alt="" draggable="false">
+                        <div class="flex-caption">
+                            <ul class="post-categories">
+                                <li><a href="#" rel="category tag">Template</a></li>
+                            </ul><a href="#"><h2 class="entry-title">Template: Featured Image (No Sidebar Layout)</h2></a><div class="read-more"><a href="https://colorlib.com/activello/template-featured-image-vertical/">Read More</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <img width="1920" height="550" src="https://cdn.colorlib.com/activello/wp-content/uploads/sites/10/2015/11/photo-1431578500526-4d9613015464-1920x550.jpg" class="attachment-activello-slider size-activello-slider wp-post-image" alt="" draggable="false">
+                        <div class="flex-caption">
+                            <ul class="post-categories">
+                                <li><a href="#" rel="category tag">Template</a></li>
+                            </ul>
+                            <a href="#"><h2 class="entry-title">Template: Featured Image (Full Width No Sidebar Layout)</h2></a>
+                            <div class="read-more">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img width="1920" height="550" src="https://cdn.colorlib.com/activello/wp-content/uploads/sites/10/2015/11/oIpwxeeSPy1cnwYpqJ1w_Dufer-Collateral-test-1920x550.jpg" class="attachment-activello-slider size-activello-slider wp-post-image" alt="" draggable="false">
+                        <div class="flex-caption">
+                            <ul class="post-categories">
+                                <li><a href="#" rel="category tag">Template</a></li>
+                            </ul>
+                            <a href="#"><h2 class="entry-title">Template: More Tag</h2></a>
+                            <div class="read-more">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img width="1920" height="550" src="https://cdn.colorlib.com/activello/wp-content/uploads/sites/10/2015/11/16386149745_f56818fbd4_o-1920x550.jpg" class="attachment-activello-slider size-activello-slider wp-post-image" alt="" draggable="false">
+                        <div class="flex-caption">
+                            <ul class="post-categories">
+                                <li><a href="#" rel="category tag">Template</a></li>
+                            </ul>
+                            <a href="#"><h2 class="entry-title">Template: Excerpt (Defined)</h2></a>
+                            <div class="read-more">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img width="1920" height="550" src="https://cdn.colorlib.com/activello/wp-content/uploads/sites/10/2015/11/119H-1920x550.jpg" class="attachment-activello-slider size-activello-slider wp-post-image" alt="" draggable="false">
+                        <div class="flex-caption">
+                            <ul class="post-categories">
+                                <li><a href="#" rel="category tag">Template</a></li>
+                            </ul>
+                            <a href="#"><h2 class="entry-title">Template: Comments</h2></a>
+                            <div class="read-more">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ol class="flex-control-nav-container flex-control-paging"><li><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li></ol>
+                <ul class="flex-direction-nav">
+                    <li class="flex-nav-prev"><a class="flex-prev" href="#"></a></li>
+                    <li class="flex-nav-next"><a class="flex-next" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="content" class="site-content container">
+
+        <div id="primary" class="content-area row">
+            <aside id="secondary" class="widget-area col-md-4 col-sm-12" role="complementary">
+                <section id="search-2" class="widget widget_search">
+
+                    <form role="search" method="get" class="search-form" action="https://colorlib.com/blaskan/">
+                        <label for="search-form-5b7d74c2efd61">
+                            <span class="screen-reader-text">Search for:</span>
+                        </label>
+                        <input type="search" id="search-form-5b7d74c2efd61" class="search-field" placeholder="Search…" value="" name="s">
+                        <button type="submit" class="search-submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <span class="screen-reader-text">Search</span>
+                        </button>
+                    </form>
+                </section>
+                <section id="blaskan_author_widget-4" class="widget widget_blaskan_author_widget">
+                    <h5 class="widget-title">About Author</h5><div class="user-info">
+                        <img alt="" src="https://secure.gravatar.com/avatar/ebc4018990624b2378fb1c3f191a4560?s=75&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/ebc4018990624b2378fb1c3f191a4560?s=150&amp;d=mm&amp;r=g 2x" class="avatar avatar-75 photo" height="75" width="75"><a href="https://colorlib.com/blaskan/author/demoblaskan/" title="Jane Smith" class="author-name" rel="author">Jane Smith</a><p class="author-description">Aenean vehicula orci ac urna molestie, nec pulvinar est lacinia. Vestibulum venenatis porim. ex. Pellentesque mi ipsum, vehicula in scelerisque quis, elementum eget dui. Nulla varius laoreet ipsum eu dignissim.</p><div class="author-social-menu">
+                            <ul id="social-menu" class="menu">
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="https://www.facebook.com/colorlib"><span>Facebook</span></a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a href="https://twitter.com/colorlib"><span>Twitter</span></a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="https://plus.google.com/+Colorlib"><span>GooglePlus</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="recent-posts-2" class="widget widget_recent_entries">
+                    <h5 class="widget-title">Recent Posts</h5>		<ul>
+                        <li>
+                            <a href="https://colorlib.com/blaskan/2017/04/20/explore-new-places-every-single-day/">Explore new places every single day</a>
+                            <span class="post-date">April 20, 2017</span>
+                        </li>
+                        <li>
+                            <a href="https://colorlib.com/blaskan/2017/04/20/travel-where-you-want/">Travel where you want.</a>
+                            <span class="post-date">April 20, 2017</span>
+                        </li>
+                        <li>
+                            <a href="https://colorlib.com/blaskan/2017/04/20/explore-the-world/">Explore the world</a>
+                            <span class="post-date">April 20, 2017</span>
+                        </li>
+                        <li>
+                            <a href="https://colorlib.com/blaskan/2017/04/20/go-to-the-movies/">Go to the movies</a>
+                            <span class="post-date">April 20, 2017</span>
+                        </li>
+                        <li>
+                            <a href="https://colorlib.com/blaskan/2017/04/20/learn-always-new-things/">Learn always new things</a>
+                            <span class="post-date">April 20, 2017</span>
+                        </li>
+                    </ul>
+                </section>
+            </aside><!-- #secondary -->
+
+            @RenderBody()
+        </div>
+    </div>
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="site-info">
+            <div class="container">
+                <div class="row">
+                    <div class="copyright-info col-md-6 col-sm-12">
+                        <a href="https://wordpress.org/">Proudly powered by WordPress</a>
+                        <span class="sep"> | </span>
+                        Theme: Blaskan by <a href="https://colorlib.com/" target="_blank" rel="designer">Colorlib.com</a>.
+                    </div>
+                    <div class="main-footer-navigation col-md-6 col-sm-12">
+                        <div class="menu-footer-container">
+                            <ul id="footer-menu" class="menu">
+                                <li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35"><a href="#">Sitemap</a></li>
+                                <li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="#">Privacy Policy</a></li>
+                                <li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="#">Terms of use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- .site-info -->
+    </footer>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

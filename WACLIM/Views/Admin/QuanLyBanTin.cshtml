@@ -1,0 +1,107 @@
+﻿
+@{
+    ViewBag.Title = "Quản lý bản tin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@using WACLIM.Models
+@model  VModuleSettings
+@{
+    var id = "";
+    var name = "";
+    var jsonSettings = "";
+    if (Model != null)
+    {
+        id = Model.Id ?? "";
+        name = Model.Name ?? "";
+    }
+
+    var vModuleId = Guid.NewGuid().ToString();
+}
+
+<div class="modal" id="mdlThemBanTin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-backdrop="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            @Html.Partial("~/Views/Admin/ThemBanTin.cshtml")
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="mdlTimKiemBanTin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-backdrop="true">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+        <div class="modal-content">
+            @Html.Partial("~/Views/Admin/BanTinTraCuu.cshtml")
+        </div>
+    </div>
+</div>
+
+<div class="VModule" vmodule-name="quanlybantin" id="@id" name="@name" vmodule-id="@vModuleId" vmodule-settings="@jsonSettings">
+    <div id="mainContent">
+        <div class="full-container">
+            <div class="peer bdR w-100" style="height:calc(100vh - 65px)">
+                <div class="layers h-100">
+                    <div class="bdB layer w-100">
+                        <div class="peers fxw-nw jc-sb ai-c pY-10 pX-30 bgc-white">
+                            <div class="peers custom-toolbar">
+                                <a class=" c-green-500 cH-blue-500 fsz-md mR-30 cur-p" data-toggle="tooltip"  title="Thêm bài" id="btnAddBanTin">
+                                    <i class="fa fa-paw"></i>
+                                </a>
+                                <div class="mR-30">
+                                    <select class="form-control">
+                                        <option value="0"></option>
+                                        <optgroup label="Sắp xếp">
+                                            <option value="volvo">Tiêu đề</option>
+                                            <option value="saab">Ngày đăng</option>
+                                        </optgroup>
+                                        <optgroup label="Filter">
+                                            <option value="mercedes">Bài viết khoa học</option>
+                                            <option value="audi">Tin tức</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <a class="peer td-n c-purple-500 cH-blue-500 fsz-md mR-30 cur-p" id="btnTimKiemNangCao" data-toggle="tooltip" title="Tìm kiếm nâng cao">
+                                    <i class="fa fa-filter"></i>
+                                </a>
+                                @*<a class="peer td-n c-red-500 cH-blue-500 fsz-md mR-30" title="">
+                                    <i class="ti-trash"></i>
+                                </a>*@
+                                <div class="search-box">
+                                    <a class="search-toggle no-pdd-right c-blue-500 mR-15 cur-p" data-toggle="tooltip" title="Tìm kiếm">
+                                        <i class="search-icon ti-search pdd-right-10 "></i>
+                                        <i class="search-icon-close ti-close pdd-right-10"></i>
+                                    </a>
+                                </div>
+                                <div class="search-input">
+                                    <input class="form-control" type="text" placeholder="Search...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer w-100 fxg-1 scrollable pos-r ps ps--active-y list-view-custom" id="listBanTin">
+                        <div class="card-columns p-20">
+                            @for (int i = 0; i < 10; i++)
+                            {
+                                <div class="card card-select" data-bantin="@i">
+                                    <img class="card-img-top" src="~/Assets/images/bg.jpg">                                   
+                                    <button class="btn btn-outline-primary  btn-remove btnRemoveBanTin"> <i class="ti-close"></i></button>
+                                    <div class="card-body pos-r">
+                                        <button type="button" class="btn btn-outline-primary btn-edit btnEditBanTin"><i class="ti-pencil"></i></button>
+                                        <h5 class="card-title">Mùa hè, World Cup và lớp học Mô hình hóa</h5>
+                                        <p class="card-text">
+                                            Sáng 27/6/2018, trên trang Web chính thức của Envim đã
+                                            đăng thông báo về việc mở các lớp học đào tạo về Mô hình hóa dành cho nhiều đối tượng khác nhau,
+                                            đặc biệt là sinh viên và học viên từ mọi miền đất nước.
+                                        </p>
+                                        <div class="text-right">
+                                            <button class="btn btn-primary">Xem chi tiết</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="~/Assets/js/Admin/quanlybantin.js"></script>
+</div>

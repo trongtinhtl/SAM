@@ -1,0 +1,23 @@
+﻿
+<!DOCTYPE html>
+<html class="">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/IHE")
+    <link href="~/Assets/IHE/css/print.css" rel="stylesheet" type="text/css" media="print" />
+    <script type="text/javascript">
+        var _WEB_URL = location.origin + '/' + '@Url.Content("~/")';
+        var VModule = {};
+    </script>
+    @Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" crossorigin=\"anonymous\"></script>", "~/bundles/IHE")
+</head>
+<body class="html page-node page-node- page-node-338 new--frontpage">
+    
+    @RenderBody()
+    <script src="~/Assets/IHE/js/main.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
