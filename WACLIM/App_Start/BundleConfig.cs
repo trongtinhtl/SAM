@@ -53,7 +53,7 @@ namespace WACLIM
                         "~/Assets/plugins/jquery-validation/jquery.validate.js",
                         "~/Assets/plugins/jquery-validation/additional-method.js",
                         "~/Assets/plugins/jquery-validation/localization/messages_vi.js",
-						"~/Assets/plugins/lazyload/jquery.lazy.min.js"
+                        "~/Assets/plugins/jquery-confirm/jquery-confirm.min.js"
                        ));
 
 			bundles.Add(new StyleBundle("~/Content/admin-plugins").Include(
@@ -61,7 +61,8 @@ namespace WACLIM
                         "~/Assets/plugins/froala/css/froala_editor.pkgd.min.css",
 						"~/Assets/plugins/froala/css/froala_style.min.css",
                         "~/Assets/plugins/jquery-loadingModal/css/jquery.loadingModal.css",
-                        "~/Assets/plugins/perfect-scrollbar/perfect-scrollbar.css"
+                        "~/Assets/plugins/perfect-scrollbar/perfect-scrollbar.css",
+                        "~/Assets/plugins/jquery-confirm/jquery-confirm.min.css"
                       ));
 
 			bundles.Add(new ScriptBundle("~/bundles/admin-layout").Include(

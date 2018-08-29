@@ -1,5 +1,10 @@
 ﻿jQuery(document).ready(function ($) {
 
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+
     $('.search-toggle').on('click', e => {
         $('.search-box, .search-input').toggleClass('active');
         $('.search-input input').focus();
@@ -95,44 +100,15 @@
     });
 
 
-    //// ------------------------------------------------------
-    //// @Window Resize
-    //// ------------------------------------------------------
+    $('.card-columns .card-select').click(function (e) {
+        e.stopPropagation();
+        $that = $(this);
+        $that.parent().find('.card-select').removeClass('selected');
+        $that.addClass('selected');
+    });
 
-    ///**
-    // * NOTE: Register resize event for Masonry layout
-    // */
+    $(window).click(function () {
+        $('.card-columns').find('.card-select').removeClass('selected');
+    });
 
-    //const EVENT = document.createEvent('UIEvents');
-    //window.EVENT = EVENT;
-    //EVENT.initUIEvent('resize', true, false, window, 0);
-
-
-    //window.addEventListener('load', () => {
-    //    /**
-    //     * Trigger window resize event after page load
-    //     * for recalculation of masonry layout.
-    //     */
-    //    window.dispatchEvent(EVENT);
-    //});
-
-    //// ------------------------------------------------------
-    //// @External Links
-    //// ------------------------------------------------------
-
-    //// Open external links in new window
-    //$('a')
-    //    .filter('[href^="http"], [href^="//"]')
-    //    .not(`[href*="${window.location.host}"]`)
-    //    .attr('rel', 'noopener noreferrer')
-    //    .attr('target', '_blank');
-
-    //// ------------------------------------------------------
-    //// @Resize Trigger
-    //// ------------------------------------------------------
-
-    //// Trigger resize on any element click
-    //document.addEventListener('click', () => {
-    //    window.dispatchEvent(window.EVENT);
-    //});
 })

@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Thêm bản tin";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    //Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 @using WACLIM.Models
 @model  VModuleSettings
@@ -49,7 +49,7 @@
                                             <div class="input-group-addon bgc-white bd bdwR-0">
                                                 <i class="ti-calendar"></i>
                                             </div>
-                                            <input type="text" class="form-control bdc-grey-200 datepicker">
+                                            <input type="text" class="form-control bdc-grey-200 datepicker" name="ngayXuatBan">
                                         </div>
                                     </div>
                                 </div>
@@ -78,7 +78,8 @@
                     </div>
                     <div class="layer w-100 bdT p-10">
                         <div class="text-right">
-                            <button type="submit" class="btn btn-primary" id="btnThemBanTin">Thêm bài viết</button>
+                            <button type="button" class="btn btn-primary" id="btnThemBanTin">Thêm bài viết</button>
+                            <button type="button" class="btn btn-primary" id="btnCapNhatBanTin" style="display:none">Cập nhật bài viết</button>
                         </div>
                     </div>
                 </div>

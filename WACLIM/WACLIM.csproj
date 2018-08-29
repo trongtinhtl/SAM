@@ -256,10 +256,10 @@
     <Content Include="Assets\Admin\css\style.css" />
     <Content Include="Assets\Admin\css\themify-icons.css" />
     <Content Include="Assets\Admin\js\vendor.js" />
+    <Content Include="Assets\js\Admin\bantintracuu.js" />
     <Content Include="Assets\js\Admin\quanlybantin.js" />
     <Content Include="Assets\js\Admin\quanlythanhvien.js" />
     <Content Include="Assets\js\Admin\thembantin.js" />
-    <Content Include="Assets\js\Admin\vmodule.js" />
     <Content Include="Assets\js\Ajax\BanTinAjax.js" />
     <Content Include="Assets\js\Ajax\TestAjax.js" />
     <Content Include="Assets\js\Ajax\ThanhVienAjax.js" />
@@ -270,7 +270,6 @@
     <Content Include="Assets\css\style.css" />
     <Content Include="Assets\images\admin.jpg" />
     <Content Include="Assets\images\logo.png" />
-    <Content Include="Assets\js\Admin\index.js" />
     <Content Include="Assets\js\GLOBAL.js" />
     <Content Include="Assets\js\template\flexslider.min.js" />
     <Content Include="Assets\js\template\functions.js" />
@@ -529,6 +528,7 @@
     <Content Include="Views\Admin\ThemBanTin.cshtml" />
     <Content Include="Views\Account\Account.cshtml" />
     <Content Include="Views\Admin\QuanLyBanTin.cshtml" />
+    <Content Include="Views\Admin\BanTinTraCuu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

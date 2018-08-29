@@ -2,9 +2,11 @@
     froalaEditor: null,
 	onInit: function (vModule) {
         let that = this;
-        this.frmThemBanTin = vModule.find('#frmThemBanTin');
-        this.frmThemBanTin.validate(GLOBAL.validateOptions);
-
+        that.frmThemBanTin = vModule.find('#frmThemBanTin');
+        that.frmThemBanTin.validate(GLOBAL.validateOptions);
+        that.btnThemBanTin = vModule.find('#btnThemBanTin');
+        that.btnCapNhatBanTin = vModule.find("#btnCapNhatBanTin");    
+        
         this.froalaEditor = this.frmThemBanTin.find("#noiDungBanTin");
         this.froalaEditor.froalaEditor({
             height: 200,
@@ -14,7 +16,10 @@
             imageUploadParams: {
                 id: 'my_editor'
             }
-        });       
+        });  
+
+        that.btnThemBanTin.show();
+        that.btnCapNhatBanTin.hide();
 	},
 
 	listeners: function () {
@@ -26,23 +31,27 @@
                 'thembantin #btnThemBanTin': {
                     click: this.onClick_BtnThemBanTin
                 },
+
 			})
     },
 
-	updateView: function (vModule) {
+    updateView: function (vModule) {
+        let that = this;
         var currentValue = vModule.getValue();
-		if (currentValue == null || currentValue == "") {
-			value = {
-				tieuDe: null,
+        that.btnThemBanTin.show();
+        that.btnCapNhatBanTin.hide();
+        GLOBAL.utils.clearFormData(that.frmThemBanTin);
+        if (currentValue == null || currentValue == "") return;
 
-			};
-			vModule.setValue(value, false);
-		}
+        GLOBAL.utils.bindFormData(that.frmThemBanTin, currentValue);
+        if (currentValue.noiDung) {
+			that.froalaEditor.froalaEditor('html.set', value.noiDung);
+        }
 
-		GLOBAL.utils.bindFormData(value);
-		if (value.noiDung) {
-			this.froalaEditor.froalaEditor('html.set', value.noiDung);
-		}
+        if (currentValue && currentValue.Id) {
+            that.btnThemBanTin.hide();
+            that.btnCapNhatBanTin.show();
+        } 
     },
 
     validateEditor: function () {
