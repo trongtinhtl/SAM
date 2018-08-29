@@ -1,2 +1,0 @@
-# SAM
-Scientific Articles Manarger
