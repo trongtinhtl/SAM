@@ -256,6 +256,20 @@
     <Content Include="Assets\Admin\css\style.css" />
     <Content Include="Assets\Admin\css\themify-icons.css" />
     <Content Include="Assets\Admin\js\vendor.js" />
+    <Content Include="Assets\IHE\css\main.css" />
+    <Content Include="Assets\IHE\css\print.css" />
+    <Content Include="Assets\IHE\image\arrow-down.png" />
+    <Content Include="Assets\IHE\image\bangalore_india.jpg" />
+    <Content Include="Assets\IHE\image\graphics.jpg" />
+    <Content Include="Assets\IHE\image\logo-unesco.svg" />
+    <Content Include="Assets\IHE\image\logo_footer.png" />
+    <Content Include="Assets\IHE\image\news.jpg" />
+    <Content Include="Assets\IHE\image\search.png" />
+    <Content Include="Assets\IHE\js\main.js" />
+    <Content Include="Assets\IHE\js\jquery.js" />
+    <Content Include="Assets\IHE\js\Migrate.js" />
+    <Content Include="Assets\IHE\js\modernizr.js" />
+    <Content Include="Assets\IHE\js\respond.min.js" />
     <Content Include="Assets\js\Admin\bantintracuu.js" />
     <Content Include="Assets\js\Admin\quanlybantin.js" />
     <Content Include="Assets\js\Admin\quanlythanhvien.js" />
@@ -474,6 +488,8 @@
     <Content Include="Assets\plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
     <Content Include="Assets\plugins\bootstrap\js\bootstrap.js.map" />
     <Content Include="Assets\plugins\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Assets\IHE\font\entypo.ttf" />
+    <Content Include="Assets\IHE\font\entypo.woff" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -529,6 +545,8 @@
     <Content Include="Views\Account\Account.cshtml" />
     <Content Include="Views\Admin\QuanLyBanTin.cshtml" />
     <Content Include="Views\Admin\BanTinTraCuu.cshtml" />
+    <Content Include="Views\Shared\_IHELayout.cshtml" />
+    <Content Include="Views\Home\IHE.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

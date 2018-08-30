@@ -35,7 +35,7 @@ namespace WACLIM.Controllers
 			return View();
 		}
 
-        public ActionResult Admin2()
+        public ActionResult IHE()
         {
             return View();
         }

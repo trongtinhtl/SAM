@@ -100,6 +100,21 @@ namespace WACLIM
                       "~/Assets/Account/css/auth.css"
                       ));
             #endregion
+
+            #region IHE
+            bundles.Add(new ScriptBundle("~/bundles/IHE").Include(
+                       "~/Assets/IHE/js/jquery.js",
+                       "~/Assets/IHE/js/Migrate.js",
+                       "~/Assets/IHE/js/respond.min.js",
+                       "~/Assets/IHE/js/modernizr.js"
+
+                       ));
+
+            bundles.Add(new StyleBundle("~/Content/IHE").Include(
+                      "~/Assets/plugins/font-awesome/font-awesome.css",
+                      "~/Assets/IHE/css/main.css"
+                      ));
+            #endregion
         }
     }
 }
