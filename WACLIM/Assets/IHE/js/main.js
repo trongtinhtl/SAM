@@ -6724,3 +6724,10 @@
         }
     }
 })(jQuery);;
+
+(function ($) {
+    $("#select-language").on("change", function () {
+        var value = $("#select-language").val();
+        $('#form-language').submit();
+    })
+})(jQuery);

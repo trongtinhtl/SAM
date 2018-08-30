@@ -1,0 +1,159 @@
+﻿<!-- start page header -->
+<header id="header-main">
+    <div class="block">
+        <a class="nav-btn" id="nav-open-btn" href="#nav-main-container">
+            <span aria-hidden="true" data-icon="☰"></span>
+            <span class="visually-hidden">Menu</span>
+        </a>
+
+        <a href="/search" id="search">
+            <img src="~/Assets/IHE/image/search.png" />
+        </a>
+
+    </div>
+</header>
+<!-- end page header -->
+
+<!-- start main navigation -->
+<nav id="nav-main-container">
+    <!-- begin wrapper -->
+    <div class="wrapper">
+        <a href="/" id="logo">
+            <img src="~/Assets/IHE/image/logo-unesco.svg" />
+        </a>
+        <ul id="nav-main">
+            <li class="">
+                <a href="/institute">Institute</a><div class="nav-sub-container-wrapper">
+                    <div class="nav-sub-container">
+                        <div class="wrapper">
+                            <ul class="nav-sub">
+                                <li class="touch"><a href="#">Overview</a></li>
+                                <li><a href="#" title="">About IHE Delft</a></li>
+                                <li><a href="#">Vision, Mission, Strategy</a></li>
+                                <li><a href="#">The Water Community</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Organization</a></li>
+                                <li><a href="#">Vacancies</a></li>
+                                <li><a href="#">Donate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="">
+                <a href="/education">Education</a><div class="nav-sub-container-wrapper">
+                    <div class="nav-sub-container">
+                        <div class="wrapper">
+                            <ul class="nav-sub">
+                                <li class="touch"><a href="#">Overview</a></li>
+                                <li><a href="#" title="">Studying at IHE Delft</a></li>
+                                <li><a href="#">MSc Programmes</a></li>
+                                <li><a href="#">PhD Programme</a></li>
+                                <li><a href="#">Professional Diploma</a></li>
+                                <li><a href="#">Short Courses</a></li>
+                                <li><a href="#">Online Courses</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Fellowships</a></li>
+                                <li><a href="#">Tailor-made Advice and Training</a></li>
+                                <li><a href="#">Open Courseware</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/research">Research</a><div class="nav-sub-container-wrapper">
+                    <div class="nav-sub-container">
+                        <div class="wrapper">
+                            <ul class="nav-sub">
+                                <li class="touch"><a href="/research">Overview</a></li>
+                                <li><a href="/research-themes">Research Themes</a></li>
+                                <li><a href="/academic-departments">Academic Departments</a></li>
+                                <li><a href="/chair-groups">Chair Groups</a></li>
+                                <li><a href="/ihe-delft-international-graduate-school-water-and-development">Graduate School</a></li>
+                                <li><a href="/research-projects">Projects</a></li>
+                                <li><a href="/library">Library</a></li>
+                                <li><a href="/laboratory">Laboratory</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="">
+                <a href="/capacity-development">Institutional Strengthening</a><div class="nav-sub-container-wrapper">
+                    <div class="nav-sub-container">
+                        <div class="wrapper">
+                            <ul class="nav-sub">
+                                <li class="touch"><a href="/capacity-development">Overview</a></li>
+                                <li><a href="/about-capacity-development">About</a></li>
+                                <li><a href="/stories">Stories</a></li>
+                                <li><a href="/projects">Projects</a></li>
+                                <li><a href="/partners">Partners</a></li>
+                                <li><a href="/dupc">Global Partnership</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/people">People</a><div class="nav-sub-container-wrapper">
+                    <div class="nav-sub-container">
+                        <div class="wrapper">
+                            <ul class="nav-sub">
+                                <li class="touch"><a href="/people">Overview</a></li>
+                                <li><a href="/staff-directory">Staff</a></li>
+                                <li><a href="/phd-fellows">PhD Fellows</a></li>
+                                <li><a href="/students">Students</a></li>
+                                <li><a href="/alumni">Alumni</a></li>
+                                <li><a href="/honorary-fellows">Honorary Fellows</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>    <!-- end wrapper -->
+    <!-- start micro navigation -->
+    <nav id="nav-micro-container">
+        <div class="wrapper">
+            <div class="search-nav-container">
+                <div id="micro-search-form" class="hide-for-mobile">
+                    <form class="search-form" id="search-form" method="get" action="/search/node" target="_self" novalidate="novalidate">
+                        <input type="text" name="terms" placeholder="Search" size="25" value="" class="input-text">
+                        <button type="submit" class="input-submit">@WACLIM.Resources.Language.Search</button>
+                    </form>
+
+                </div>
+                <ul id="nav-micro">
+                    <li><a href="/contact" title="">@WACLIM.Resources.Language.Contact</a></li>
+
+                    <li><a href="/information-staff-and-students" class="member">@WACLIM.Resources.Language.Login</a></li>
+                </ul>
+                <div id="container-language" class="custom-select">
+                    <form id="form-language" action="@Url.Action("ChangeLanguage", "Languages")">
+                        <select id="select-language" name="culture">
+                            @{
+                                System.Globalization.CultureInfo currentCulture = System.Threading.Thread.CurrentThread.CurrentCulture;
+
+                                if (currentCulture.Name == "en-US")
+                                {
+                                    <option class="language-en" value="en-US" selected="selected">@WACLIM.Resources.Language.English</option>
+                                    <option class="language-vi" value="vi-VN">@WACLIM.Resources.Language.Vietnamese</option>
+                                }
+                                else
+                                {
+                                    <option class="language-en" value="en-US">@WACLIM.Resources.Language.English</option>
+                                    <option class="language-vi" value="vi-VN" selected="selected">@WACLIM.Resources.Language.Vietnamese</option>
+                                }
+                            }
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>    <!-- end micro navigation -->
+</nav>
+<!-- end main navigation -->

@@ -14044,3 +14044,36 @@ h3.green-block {
 #nav-micro-container #micro-search-form input[type=text] {
     background-image: url(../image/search.png) !important;
 }
+
+#container-language {
+    float:left;
+    height: 32px !important;
+}
+#container-language select {
+    width: 110px;
+    text-align:right;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none !important;
+    padding: 9px 0px 9px 15px;
+    border-radius: 0;
+    transition: all .5s;
+    
+    font-family: "Arial", sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #bababa;
+    cursor: pointer;
+}
+
+    #container-language select:focus {
+        outline: none !important;
+    }
+
+    #container-language select > option {
+        text-align:center;
+        height: 40px;
+        background-image: url(../image/us.svg) !important
+    }
+
