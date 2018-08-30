@@ -30,22 +30,55 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="MongoDB.AspNet.Identity, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\MongoDB.AspNet.Identity.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.7.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="MongoDB.Driver, Version=2.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Legacy, Version=2.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\MongoDB.Driver.Legacy.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Web, Version=2.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\MongoDB.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Object\BanTinViewModel.cs" />
-    <Compile Include="Object\NodeInfo.cs" />
-    <Compile Include="Object\ThanhVienViewModel.cs" />
+    <Compile Include="Helpers\FileHelper.cs" />
+    <Compile Include="Model\BanTinViewModel.cs" />
+    <Compile Include="Model\NodeInfo.cs" />
+    <Compile Include="Model\ThanhVienViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Provider\BanTinProvider.cs" />
+    <Compile Include="Provider\MongoProvider.cs" />
     <Compile Include="Provider\ThanhVienProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dll\MongoDB.AspNet.Identity.dll" />
+    <Content Include="Dll\MongoDB.Bson.dll" />
+    <Content Include="Dll\MongoDB.Driver.Core.dll" />
+    <Content Include="Dll\MongoDB.Driver.dll" />
+    <Content Include="Dll\MongoDB.Driver.Legacy.dll" />
+    <Content Include="Dll\MongoDB.Web.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
