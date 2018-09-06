@@ -117,19 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ConnectWithUs" xml:space="preserve">
+    <value>Connect with us</value>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>Contact</value>
+  </data>
+  <data name="ENewsletter" xml:space="preserve">
+    <value>E-newsletter (monthly)</value>
   </data>
   <data name="English" xml:space="preserve">
     <value>English</value>
   </data>
+  <data name="FollowOurActivities" xml:space="preserve">
+    <value>Follow our activities and share some of your own</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Log in</value>
+  </data>
+  <data name="NeverMissAThing" xml:space="preserve">
+    <value>Never miss a thing!</value>
+  </data>
+  <data name="PostalAddress" xml:space="preserve">
+    <value>Postal address</value>
   </data>
   <data name="Search" xml:space="preserve">
     <value>Search</value>
   </data>
+  <data name="SignUpForOurNewsletter" xml:space="preserve">
+    <value>Sign up for our newsletter and online magazine to stay up-to-date</value>
+  </data>
+  <data name="UpdateMagazine" xml:space="preserve">
+    <value>UPDATE magazine (twice a year)</value>
+  </data>
   <data name="Vietnamese" xml:space="preserve">
     <value>Vietnamese</value>
+  </data>
+  <data name="VisitingAddress" xml:space="preserve">
+    <value>Visiting address</value>
   </data>
 </root>

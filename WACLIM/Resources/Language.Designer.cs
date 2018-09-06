@@ -61,11 +61,29 @@ namespace WACLIM.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Connect with us.
+        /// </summary>
+        public static string ConnectWithUs {
+            get {
+                return ResourceManager.GetString("ConnectWithUs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contact.
         /// </summary>
         public static string Contact {
             get {
                 return ResourceManager.GetString("Contact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to E-newsletter (monthly).
+        /// </summary>
+        public static string ENewsletter {
+            get {
+                return ResourceManager.GetString("ENewsletter", resourceCulture);
             }
         }
         
@@ -79,11 +97,38 @@ namespace WACLIM.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Follow our activities and share some of your own.
+        /// </summary>
+        public static string FollowOurActivities {
+            get {
+                return ResourceManager.GetString("FollowOurActivities", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Log in.
         /// </summary>
         public static string Login {
             get {
                 return ResourceManager.GetString("Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Never miss a thing!.
+        /// </summary>
+        public static string NeverMissAThing {
+            get {
+                return ResourceManager.GetString("NeverMissAThing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Postal address.
+        /// </summary>
+        public static string PostalAddress {
+            get {
+                return ResourceManager.GetString("PostalAddress", resourceCulture);
             }
         }
         
@@ -97,11 +142,38 @@ namespace WACLIM.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sign up for our newsletter and online magazine to stay up-to-date.
+        /// </summary>
+        public static string SignUpForOurNewsletter {
+            get {
+                return ResourceManager.GetString("SignUpForOurNewsletter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UPDATE magazine (twice a year).
+        /// </summary>
+        public static string UpdateMagazine {
+            get {
+                return ResourceManager.GetString("UpdateMagazine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Vietnamese.
         /// </summary>
         public static string Vietnamese {
             get {
                 return ResourceManager.GetString("Vietnamese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visiting address.
+        /// </summary>
+        public static string VisitingAddress {
+            get {
+                return ResourceManager.GetString("VisitingAddress", resourceCulture);
             }
         }
     }

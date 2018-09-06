@@ -117,17 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ConnectWithUs" xml:space="preserve">
+    <value>Liên hệ với chúng tôi</value>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>Liên hệ</value>
+  </data>
+  <data name="ENewsletter" xml:space="preserve">
+    <value>Bản tin điện tử (hàng tháng)</value>
   </data>
   <data name="English" xml:space="preserve">
     <value>Tiếng Anh</value>
   </data>
+  <data name="FollowOurActivities" xml:space="preserve">
+    <value>Theo dõi các hoạt động của chúng tôi và chia sẻ một số hoạt động của riêng bạn</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Đăng nhập</value>
   </data>
+  <data name="NeverMissAThing" xml:space="preserve">
+    <value>Không bỏ lở bất kì điều gì!</value>
+  </data>
   <data name="Search" xml:space="preserve">
     <value>Tìm kiếm</value>
+  </data>
+  <data name="SignUpForOurNewsletter" xml:space="preserve">
+    <value>Đăng ký để nhận bản tin và tạp chí trực tuyến mới nhất của chúng tôi</value>
+  </data>
+  <data name="UpdateMagazine" xml:space="preserve">
+    <value>Tạp chí (hai năm một lần)</value>
   </data>
   <data name="Vietnamese" xml:space="preserve">
     <value>Việt Nam</value>
