@@ -7,10 +7,10 @@ namespace Library.Object
 {
     public class ThanhVienViewModel : NodeInfo
     {
-		public string HoTen { get; set; }
-		public string hocVi { get; set; }
-		public string email { get; set; }
-		public string soDienThoai { get; set; }
-		public string donViCongTac { get; set; }
+		public string Name { get; set; }
+		public string Degree { get; set; }
+		public string Email { get; set; }
+		public string Phone { get; set; }
+		public string DonViCongTac { get; set; }
     }
 }

@@ -7,13 +7,13 @@ namespace Library.Object
 {
     public class BanTinViewModel : NodeInfo
     {
-        public string tieuDe { get; set; }
-        public string tomTat { get; set; }
-        public string urlHinh { get; set; }
-        public string noiDung { get; set; }
-        public int theLoai { get; set; }
-        public string tacGia { get; set; }
-        public string ngayXuatBan { get; set; }
-        public List<string> duongDanAnh { get; set; }
+        public string TieuDe { get; set; }
+        public string TomTat { get; set; }
+        public string UrlHinhDaiDien { get; set; }
+        public string NoiDung { get; set; }
+        public int TheLoai { get; set; }
+        public string TacGia { get; set; }
+        public string NgayXuatBan { get; set; }
+        public List<string>UrlHinh{ get; set; }
     }
 }
