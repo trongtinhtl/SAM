@@ -11,8 +11,8 @@
         this.froalaEditor.froalaEditor({
             height: 200,
             language: 'vi',
-            toolbarButtons: ['fullscreen', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', '|', 'fontFamily', 'fontSize', 'color', 'inlineStyle', 'paragraphStyle', '|', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', 'quote', '-', 'insertLink', 'insertImage', 'insertVideo', 'insertFile', 'insertTable', '|', 'emoticons', 'specialCharacters', 'insertHR', 'selectAll', 'clearFormatting', '|', 'print', 'help', 'html', '|', 'undo', 'redo'],
-            imageUploadURL: 'UploadFiles',
+			toolbarButtons: ['fullscreen', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', '|', 'fontFamily', 'fontSize', 'color', 'inlineStyle', 'paragraphStyle', '|', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', 'quote', '-', 'insertLink', 'insertImage', 'insertVideo', 'insertFile', 'insertTable', '|', 'emoticons', 'specialCharacters', 'insertHR', 'selectAll', 'clearFormatting', '|', 'print', 'help', 'html', '|', 'undo', 'redo'],
+			imageUploadURL: GLOBAL.linkRoot + 'BanTinAjax/UploadFile',
             imageUploadParams: {
                 id: 'my_editor'
             }
@@ -45,7 +45,7 @@
 
         GLOBAL.utils.bindFormData(that.frmThemBanTin, currentValue);
         if (currentValue.noiDung) {
-			that.froalaEditor.froalaEditor('html.set', value.noiDung);
+			that.froalaEditor.froalaEditor('html.set', currentValue.noiDung);
         }
 
         if (currentValue && currentValue.Id) {

@@ -107,7 +107,8 @@
             Id:3,
             tieuDe :  "Mùa hè, World Cup và lớp học Mô hình hóa",
             tomTat : "Sáng 27/6/2018, trên trang Web chính thức của Envim đã đăng thông báo về việc mở các lớp học đào tạo về Mô hình hóa dành cho nhiều đối tượng khác nhau,đặc biệt là sinh viên và học viên từ mọi miền đất nước.",
-            ngayXuatBan: "21/8/2018"
+			ngayXuatBan: "21/8/2018",
+			noiDung: "<img src='http://localhost/RUBI/FileHandler.ashx?id=5b98c489c1986da340769c00'></img>"
         }
 
         that.vModuleThemBanTin.setValue(data);

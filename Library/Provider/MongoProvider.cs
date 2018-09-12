@@ -24,7 +24,7 @@ namespace Library.Provider
                     return null;
                 return Database.GetCollection<NodeInfo>("go_node").FindAll().SetSortOrder(SortBy.Descending("DateTime")).SetLimit(numRow).ToList();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }

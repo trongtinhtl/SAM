@@ -14077,3 +14077,6 @@ h3.green-block {
         background-image: url(../image/us.svg) !important
     }
 
+#nav-main li > a.non-subs:after {
+	content: "" !important;
+}

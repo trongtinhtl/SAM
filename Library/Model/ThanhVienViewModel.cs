@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Library.Model;
+﻿using MongoDB.Bson.Serialization.Attributes;
 
-namespace Library.Object
+namespace Library.Model
 {
+    [BsonIgnoreExtraElements]
     public class ThanhVienViewModel : NodeInfo
     {
 		public string Name { get; set; }
