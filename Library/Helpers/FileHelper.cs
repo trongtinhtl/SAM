@@ -4,7 +4,7 @@ using System.IO;
 
 namespace Library.Helper
 {
-    internal class FileHelper
+    public class FileHelper
     {
         public string SaveFile(Stream fs, string nameFile)
         {
