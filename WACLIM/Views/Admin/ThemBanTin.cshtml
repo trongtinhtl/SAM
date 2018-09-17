@@ -6,7 +6,7 @@
 @using WACLIM.Models
 @model  VModuleSettings
 @{
-            var id = "";
+    var id = "";
     var name = "";
     var jsonSettings = "";
     if (Model != null)
@@ -19,7 +19,7 @@
 }
 <div class="VModule" vmodule-name="thembantin" id="vmodule-thembantin" vmodule-id="@vModuleId" vmodule-settings="@jsonSettings">
     <div id="mainContent">
-        <div class="bgc-white bd-content">            
+        <div class="bgc-white bd-content">
             <div class="peer w-100" style="height:calc(100vh - 125px)">
                 <div class="layers h-100">
                     <div class="layer w-100 p-10 bdB">
@@ -28,53 +28,87 @@
                         </h5>
                     </div>
                     <div class="layer w-100 fxg-1 scrollable pos-r ps ps--active-y">
-                        <form id="frmThemBanTin" class="p-20">
-                            <div class="form-group">
-                                <label for="tieuDe">Tiêu đề bài viết</label>
-                                <input type="text" class="form-control bdc-grey-200" id="tieuDe" name="tieuDe" data-rule-required="true">
-                            </div>
-                            <div class="form-group">
-                                <label for="tomTat">Tóm tắt</label>
-                                <textarea type="text" class="form-control bdc-grey-200" id="tomTat" name="tomTat"  data-rule-required="true"></textarea>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="tacGia">Tác giả</label>
-                                    <input type="text" class="form-control bdc-grey-200" id="tacGia" name="tacGia">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Ngày xuất bản</label>
-                                    <div class=" input-icon form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-addon bgc-white bd bdwR-0">
-                                                <i class="ti-calendar"></i>
+                        <div id="frmThemBanTin" class="p-10">
+                            <div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="tacGia">Tác giả</label>
+                                        <input type="text" class="form-control bdc-grey-200" id="tacGia" name="tacGia">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Ngày xuất bản</label>
+                                        <div class=" input-icon form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-addon bgc-white bd bdwR-0">
+                                                    <i class="ti-calendar"></i>
+                                                </div>
+                                                <input type="text" class="form-control bdc-grey-200 datepicker" name="ngayXuatBan">
                                             </div>
-                                            <input type="text" class="form-control bdc-grey-200 datepicker" name="ngayXuatBan">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="ngayXuatBan">Thể loại</label>
+                                        <select id="inputState" class="form-control bdc-grey-200">
+                                            <option selected="selected">Bài báo khoa học</option>
+                                            <option>Tin tức</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="urlHinh">Ảnh tiêu đề</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input form-control bdc-grey-200 cur-p" name="duongDanAnh" id="duongDanAnh">
+                                            <label class="custom-file-label bdc-grey-200" for="duongDanAnh">Chọn ảnh...</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="ngayXuatBan">Thể loại</label>
-                                    <select id="inputState" class="form-control bdc-grey-200">
-                                        <option selected="selected">Bài báo khoa học</option>
-                                        <option>Tin tức</option>
-                                    </select>
+
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#vietnamese" role="tab" data-toggle="tab">Tiếng Việt</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#english" role="tab" data-toggle="tab">Tiếng Anh</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in actives" id="vietnamese">
+                                    <div class="p-10">
+                                        <div class="form-group">
+                                            <label for="title">Tiêu đề bài viết</label>
+                                            <input type="text" class="form-control bdc-grey-200" id="title" name="Title" data-rule-required="true">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="summary">Tóm tắt</label>
+                                            <textarea type="text" class="form-control bdc-grey-200" id="summary" name="Summary" data-rule-required="true"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="content">Nội dung</label>
+                                            <textarea type="text" class="form-control  bdc-grey-200" id="content" name="Content" data-rule-required="true"></textarea>
+                                        </div>
+                                    </div>                                    
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <label for="urlHinh">Ảnh tiêu đề</label>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input form-control bdc-grey-200 cur-p" name="duongDanAnh" id="duongDanAnh" >
-                                        <label class="custom-file-label bdc-grey-200" for="duongDanAnh">Chọn ảnh...</label>
-                                    </div>
+                                <div role="tabpanel" class="tab-pane fade" id="english">
+                                    <div class="p-10">
+                                        <div class="form-group">
+                                            <label for="eTitle">Title</label>
+                                            <input type="text" class="form-control bdc-grey-200" id="eTitle" name="ETitle" data-rule-required="true">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="eSummary">Sumary</label>
+                                            <textarea type="text" class="form-control bdc-grey-200" id="eSummary" name="ESummary" data-rule-required="true"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="eContent">Content</label>
+                                            <textarea type="text" class="form-control  bdc-grey-200" id="eContent" name="EContent" data-rule-required="true"></textarea>
+                                        </div>
+                                    </div>                                    
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="noiDungBanTin">Nội dung</label>
-                                <textarea type="text" class="form-control  bdc-grey-200" id="noiDungBanTin" name="noiDung"  data-rule-required="true"></textarea>
-                            </div>                            
-                        </form>
+
+                        </div>
                     </div>
                     <div class="layer w-100 bdT p-10">
                         <div class="text-right">
@@ -83,7 +117,7 @@
                         </div>
                     </div>
                 </div>
-                                
+
             </div>
         </div>
         <script type="text/javascript" src="~/Assets/js/Admin/thembantin.js"></script>

@@ -7,7 +7,7 @@
         that.btnThemBanTin = vModule.find('#btnThemBanTin');
         that.btnCapNhatBanTin = vModule.find("#btnCapNhatBanTin");    
         
-        this.froalaEditor = this.frmThemBanTin.find("#noiDungBanTin");
+        this.froalaEditor = this.frmThemBanTin.find("#content");
         this.froalaEditor.froalaEditor({
             height: 200,
             language: 'vi',
@@ -16,7 +16,18 @@
             imageUploadParams: {
                 id: 'my_editor'
             }
-        });  
+        });
+
+        this.froalaEditorEnglish = this.frmThemBanTin.find("#eContent");
+        this.froalaEditorEnglish.froalaEditor({
+            height: 200,
+            language: 'vi',
+            toolbarButtons: ['fullscreen', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', '|', 'fontFamily', 'fontSize', 'color', 'inlineStyle', 'paragraphStyle', '|', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', 'quote', '-', 'insertLink', 'insertImage', 'insertVideo', 'insertFile', 'insertTable', '|', 'emoticons', 'specialCharacters', 'insertHR', 'selectAll', 'clearFormatting', '|', 'print', 'help', 'html', '|', 'undo', 'redo'],
+            imageUploadURL: GLOBAL.linkRoot + 'BanTinAjax/UploadFile',
+            imageUploadParams: {
+                id: 'my_editor'
+            }
+        });
 
         that.btnThemBanTin.show();
         that.btnCapNhatBanTin.hide();

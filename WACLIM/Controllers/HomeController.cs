@@ -16,21 +16,36 @@ namespace WACLIM.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult GioiThieu()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult ThanhVien()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
 
-		public ActionResult Admin()
+        public ActionResult NghienCuu()
+        {
+            return View();
+        }
+
+        public ActionResult DaoTao()
+        {
+            return View();
+        }
+
+        public ActionResult BanTinChiTiet()
+        {
+            return View();
+        }
+
+        public ActionResult ChiTietThanhVien()
+        {
+            return View();
+        }
+        public ActionResult Admin()
 		{
 			return View();
 		}

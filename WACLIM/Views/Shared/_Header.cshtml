@@ -23,14 +23,14 @@
         </a>
         <ul id="nav-main">
             <li class="">
-                <a href="#"  class="non-subs">Giới thiệu</a>
+                <a href="@Url.Action("gioithieu", "home")"  class="non-subs">Giới thiệu</a>
             </li>
             <li class="">
-                <a href="#" class="non-subs">Tin tức-sự kiện</a>
+                <a href="@Url.Action("index", "home")" class="non-subs">Tin tức-sự kiện</a>
             </li>
             <li>
-                <a href="#">Thành viên</a>
-				<div class="nav-sub-container-wrapper">
+                <a href="@Url.Action("thanhvien","home")"  class="non-subs">Thành viên</a>
+				@*<div class="nav-sub-container-wrapper">
                     <div class="nav-sub-container">
                         <div class="wrapper">
                             <ul class="nav-sub">
@@ -44,7 +44,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div>*@
             </li>
             <li class="">
                 <a href="#">Nghiên cứu</a>
