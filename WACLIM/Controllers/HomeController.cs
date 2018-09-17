@@ -36,7 +36,12 @@ namespace WACLIM.Controllers
             return View();
         }
 
-        public ActionResult BanTinChiTiet()
+		public ActionResult TinTuc()
+		{
+			return View();
+		}
+
+		public ActionResult BanTinChiTiet()
         {
             return View();
         }

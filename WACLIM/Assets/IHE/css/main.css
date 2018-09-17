@@ -14080,3 +14080,19 @@ h3.green-block {
 #nav-main li > a.non-subs:after {
 	content: "" !important;
 }
+
+#footer .social ul li a:before {
+	color: #2B324C !important;
+}
+
+.pager li.last a {
+	width:50px
+}
+
+#content-header-background {
+	background-color: #7FD8CD !important;
+}
+
+.overview-block.blocklink:hover, .overview-block.blocklink:focus, .items .item:hover, .items .item:focus {
+	background-color: #7FD8CD !important;
+}

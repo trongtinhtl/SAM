@@ -1,99 +1,117 @@
 ﻿
+<div class="new--layout" style="padding-top: 96px;">
+	
+</div>
+
 <footer id="footer" class="">
-    <div class="new--layout relative" style="padding-top: 96px;">
-        <div class="container">
+	<div class="new--layout relative" style="padding-top: 96px;">
+		<div class="container">
 
-            <div class="row clearfix">
-                <div class="col-2-2">
-                    <a href="#" class="logo--footer">
-                        <img src="~/Assets/IHE/image/logo_footer.png" />
-                    </a>
-                </div>
-            </div>
+			<div class="row clearfix">
+				<div class="col-2-2">
+					<a href="#" class="logo--footer">
+						<img src="~/Assets/IHE/image/logo.png" height="100" />
+					</a>
+				</div>
+			</div>
 
-            <div class="row clearfix">
-                <div class="col-1-4">
-                    <div class="address">
-                        <h3>Visiting address</h3>
-                        <div class="vcard">
-                            <span class="fn org">IHE Delft</span>
-                            <div class="adr">
-                                <span class="street-address">Westvest 7</span><br>
-                                <span class="postal-code">2611 AX</span>
-                                <span class="locality">Delft</span><br>
-                                <span class="country">The Netherlands</span>
-                            </div>
-                            <span class="geo">
-                                <span class="latitude">
-                                    <span class="value-title" title="52.008869"></span>
-                                </span>
-                                <span class="longitude">
-                                    <span class="value-title" title="4.356562"></span>
-                                </span>
-                            </span>
-                        </div>
-                    </div>
-                    <div style=""><a href="#" class="directions">Directions</a></div>
-                </div>
+			<div class="row clearfix">
+				<div class="col-1-3">
+					<div class="address">
+						<h3>@WACLIM.Resources.Language.VisitAddress</h3>
+						<div class="vcard">
+							<div class="adr">
+								<span class="street-address">@WACLIM.Resources.Language.Street</span><br>
+								<span class="postal-code">@WACLIM.Resources.Language.WardDistrict</span><br>
+								<span class="locality">@WACLIM.Resources.Language.City</span><br>
+								<span class="country">@WACLIM.Resources.Language.Country</span>
+							</div>
+							<span class="geo">
+								<span class="latitude">
+									<span class="value-title" title="52.008869"></span>
+								</span>
+								<span class="longitude">
+									<span class="value-title" title="4.356562"></span>
+								</span>
+							</span>
+						</div>
+					</div>
+					<div style="">
+						<a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Khoa+h%E1%BB%8Dc+T%E1%BB%B1+nhi%C3%AAn+TPHCM/10.762543,106.6790984,17z/data=!4m12!1m6!3m5!1s0x31752f1c06f4e1dd:0x43900f1d4539a3d!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIFThu7Egbmhpw6puIFRQSENN!8m2!3d10.7624165!4d106.6812013!3m4!1s0x31752f1c06f4e1dd:0x43900f1d4539a3d!8m2!3d10.7624165!4d106.6812013" class="directions">
+							@WACLIM.Resources.Language.Directions
+						</a>
+					</div>
+				</div>
 
-                <div class="col-1-4">
-                    <div class="address">
-                        <h3>Postal address</h3>
-                        <div class="vcard">
-                            <span class="fn org">IHE Delft</span>
-                            <div class="adr">
-                                <span class="street-address">PO Box 3015</span><br>
-                                <span class="postal-code">2601 DA</span>
-                                <span class="locality">Delft</span><br>
-                                <span class="country">The Netherlands</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+				<div class="col-1-3">
+					<div class="address">
+						<h3>@WACLIM.Resources.Language.Links</h3>
+						<nav>
+							<ul>								
+								<li>
+									<a href="http://www.emslab.net/">EMSLab</a>
+								</li>
+								<li>
+									<a href="http://www.un-ihe.org">IHE Delft</a>
+								</li>
+								<li>
+									<a href="https://www.hcmus.edu.vn/">@WACLIM.Resources.Language.UniversityScience</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 
-                <div class="col-1-4 hide-small hide-medium ">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Media</a></li>
-                            <li><a href="#">Open Courseware</a></li>
-                            <li><a href="#">Information for staff &amp; students</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-1-4 hide-small hide-medium ">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Codes of Conduct</a></li>
-                            <li><a href="#">Privacy Statement</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+				<div class="col-1-3">
+					<h3>@WACLIM.Resources.Language.ConnectWithUs</h3>
+					@*<div class="sign-up section">
+							<h4 class="h4">@WACLIM.Resources.Language.SignUpForOurNewsletter</h4>
+							<!--mailing form -->
+							<form action="" method="post" id="mailing_form_footer" name="mailing_form" class="mailing_form" novalidate="novalidate">
+								<input type="text" name="email" id="email_footer" placeholder="Sign up now" class="required email nieuwsbrief">
+								<button id="edit-ajax-submit" name="ajax_submit" value="Send message" type="submit">Send</button>
+								<div class="radios clearfix">
+									<input type="checkbox" name="newsletter" value="monthly_newsletter" checked="">@WACLIM.Resources.Language.ENewsletter<br>
+									<input type="checkbox" name="newsletter" value="update_magazine">@WACLIM.Resources.Language.UpdateMagazine
+								</div>
+							</form>
+							<!-- end mailing form -->
 
-            <div class="row clearfix">
-                <div class="col-2-2">
-                    <div class="tel-container">
-                        <span class="tel"><a class="value" href="tel:+31152151715">Phone: +31 (0)152151715</a></span><br>
-                        <span class="fax">Fax: +31 (0)152122921</span>
-                    </div>
-                </div>
-            </div>
+						</div>*@
 
-            <div class="row clearfix hide-widescreens">
-                <div class="col-2-2">
-                    <nav class="extra-menu-mobile">
-                        <ul>
-                            <li><a href="#">Media</a></li>
-                            <li><a href="#">Open Courseware</a></li>
-                            <li><a href="#">Information for staff &amp; students</a></li>
-                            <li><a href="#">Codes of Conduct</a></li>
-                            <li><a href="#">Privacy Statement</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+					<div class="social">
+						<span>@WACLIM.Resources.Language.FollowOurActivities</span>
+						<ul style="margin-top:5px">
+							<li>
+								<a href="#" class="linkedin" target="_blank"></a>
+							</li>
+							<li>
+								<a href="#" class="facebook" target="_blank"></a>
+							</li>
+							<li>
+								<a href="#" class="twitter" target="_blank"></a>
+							</li>
+							<li>
+								<a href="#" class="youtube" target="_blank"></a>
+							</li>
+							<li>
+								<a href="#" class="instagram" target="_blank"></a>
+							</li>
+						</ul>
 
+					</div>
+				</div>
+			</div>
 
-        </div>
-    </div>
+			<div class="row clearfix">
+				<div class="col-2-2">
+					<div class="tel-container">
+						<span class="tel"><a class="value" href="tel:+31152151715">@WACLIM.Resources.Language.Phone: +31 (0)152151715</a></span><br>
+						<span class="fax">Fax: +31 (0)152122921</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
 </footer>

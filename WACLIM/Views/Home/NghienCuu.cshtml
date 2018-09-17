@@ -1,25 +1,21 @@
 ﻿
 @{
-    ViewBag.Title = "NghienCuu";
+	ViewBag.Title = "NghienCuu";
+	Layout = "~/Views/Shared/_Layoutpage.cshtml";
 }
-<article id="page-content" class="new--layout" >
+<article id="page-content" >
+
     <header>
-        <div class="content-header-background clearfix paragraph--wrapper">
-            <div class="paragraph-item color--switch--possible">
-                <header>
-
-                    <h1>Research</h1>
-
-                    <div class="leader-block-container">
-                        <div class="leader-block full-width" style="min-height: 72px;">
-                            <p>The Institute's demand-driven research activities focus on and contribute to the knowledge base concerning water &amp; development.</p>
-                        </div>
-                        <div class="fact-list-container" style="min-height: 72px;"></div>
-                    </div>
-                </header>
-            </div>
-        </div>
-
+		<div class="top">
+			<a class="back" href="@Url.Action("index", "home")">Back to Home</a>
+		</div>
+		<h1>Research</h1>
+		<div class="leader-block-container">
+			<div class="leader-block">
+				<p>The Institute's demand-driven research activities focus on and contribute to the knowledge base concerning water &amp; development.</p>
+			</div>
+			<div class="fact-list-container"></div>
+		</div> 
     </header>
 
     <div class="tabs"></div>

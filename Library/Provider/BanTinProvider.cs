@@ -35,10 +35,10 @@ namespace Library.Provider
 				if (banTin == null)
 					return null;
 				banTin.Id = ObjectId.GenerateNewId();
-				//Mì ăn liền -> nhắm mắt đưa xuống, nào phát sinh xử lý tiếp 
+				banTin.CreatedDate = DateTime.Now;
+				banTin.UpdatedDate = DateTime.Now;
 				MongoProvider.Database.GetCollection<BanTinViewModel>("go_bantin").Insert(banTin);
 				return banTin.Id.ToString();
-
 			}
             catch (Exception)
             {
@@ -61,27 +61,35 @@ namespace Library.Provider
                 return false;
             }
         }
+		
+   //     public bool UpdateBanTin(string objectId, BanTinViewModel banTin)
+   //     {
+   //         try
+   //         {
+   //             if (string.IsNullOrEmpty(objectId))
+   //                 return false;
 
-        // Xóa rồi insert lại cho lẹ
-        public bool UpdateBanTin(string objectId, BanTinViewModel banTin)
-        {
-            try
-            {
-                if (string.IsNullOrEmpty(objectId))
-                    return false;
+			//	banTin.UpdatedDate = DateTime.Now;
 
-                //Xóa nó cho bằng đc rồi mới insert
-                if (MongoProvider.Database.GetCollection("go_bantin").Remove(Query.EQ("_id", ObjectId.Parse(objectId))).DocumentsAffected < 0)
-                    return false;
+			//	var result = MongoProvider.Database.GetCollection("go_bantin").Update(
+			//			Query.EQ("_id", ObjectId.Parse(objectId)),
+			//			Update.Set("Title", banTin.Title).Set("Summary", banTin.Summary).Set("URL", Address),
+			//			MongoDB.Driver.UpdateFlags.Upsert
+			//   );
 
-				banTin.Id = ObjectId.Parse(objectId);
-                return MongoProvider.Database.GetCollection<BanTinViewModel>("go_bantin").Insert(banTin) !=  null ? true: false;
 
-			}
-            catch (Exception)
-            {
-                return false;
-            }
-        }
+
+			//	//            if (MongoProvider.Database.GetCollection("go_bantin").Remove(Query.EQ("_id", ObjectId.Parse(objectId))).DocumentsAffected < 0)
+			//	//                return false;
+
+			//	//banTin.Id = ObjectId.Parse(objectId);
+			//	//            return MongoProvider.Database.GetCollection<BanTinViewModel>("go_bantin").Insert(banTin) !=  null ? true: false;
+
+			//}
+   //         catch (Exception)
+   //         {
+   //             return false;
+   //         }
+   //     }
     }
 }

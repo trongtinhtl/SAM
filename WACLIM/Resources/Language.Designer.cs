@@ -19,7 +19,7 @@ namespace WACLIM.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Language {
@@ -61,6 +61,15 @@ namespace WACLIM.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ho Chi Minh City.
+        /// </summary>
+        public static string City {
+            get {
+                return ResourceManager.GetString("City", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Connect with us.
         /// </summary>
         public static string ConnectWithUs {
@@ -75,6 +84,51 @@ namespace WACLIM.Resources {
         public static string Contact {
             get {
                 return ResourceManager.GetString("Contact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VietNam.
+        /// </summary>
+        public static string Country {
+            get {
+                return ResourceManager.GetString("Country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đề tài khóa luận/tiểu luận đại học.
+        /// </summary>
+        public static string DeTaiKhoaLuan {
+            get {
+                return ResourceManager.GetString("DeTaiKhoaLuan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đề tài sau đại học.
+        /// </summary>
+        public static string DeTaiSauDaiHoc {
+            get {
+                return ResourceManager.GetString("DeTaiSauDaiHoc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directions.
+        /// </summary>
+        public static string Directions {
+            get {
+                return ResourceManager.GetString("Directions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Education.
+        /// </summary>
+        public static string Education {
+            get {
+                return ResourceManager.GetString("Education", resourceCulture);
             }
         }
         
@@ -106,6 +160,33 @@ namespace WACLIM.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Introduction.
+        /// </summary>
+        public static string Introduction {
+            get {
+                return ResourceManager.GetString("Introduction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Links.
+        /// </summary>
+        public static string Links {
+            get {
+                return ResourceManager.GetString("Links", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WACLIM - Water quality modelling.
+        /// </summary>
+        public static string Logan {
+            get {
+                return ResourceManager.GetString("Logan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Log in.
         /// </summary>
         public static string Login {
@@ -124,11 +205,74 @@ namespace WACLIM.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to News - Events.
+        /// </summary>
+        public static string News_Events {
+            get {
+                return ResourceManager.GetString("News_Events", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to People.
+        /// </summary>
+        public static string People {
+            get {
+                return ResourceManager.GetString("People", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone.
+        /// </summary>
+        public static string Phone {
+            get {
+                return ResourceManager.GetString("Phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Postal address.
         /// </summary>
         public static string PostalAddress {
             get {
                 return ResourceManager.GetString("PostalAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Projects.
+        /// </summary>
+        public static string Projects {
+            get {
+                return ResourceManager.GetString("Projects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Research.
+        /// </summary>
+        public static string Research {
+            get {
+                return ResourceManager.GetString("Research", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Research Themes.
+        /// </summary>
+        public static string ResearchThemes {
+            get {
+                return ResourceManager.GetString("ResearchThemes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Science Research.
+        /// </summary>
+        public static string ScienceResearch {
+            get {
+                return ResourceManager.GetString("ScienceResearch", resourceCulture);
             }
         }
         
@@ -151,6 +295,60 @@ namespace WACLIM.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 227 Nguyen Van Cu.
+        /// </summary>
+        public static string Street {
+            get {
+                return ResourceManager.GetString("Street", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Go to SUBSCRIBE.
+        /// </summary>
+        public static string Subscribe {
+            get {
+                return ResourceManager.GetString("Subscribe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Support.
+        /// </summary>
+        public static string Support {
+            get {
+                return ResourceManager.GetString("Support", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Teaching.
+        /// </summary>
+        public static string Teaching {
+            get {
+                return ResourceManager.GetString("Teaching", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Training.
+        /// </summary>
+        public static string Training {
+            get {
+                return ResourceManager.GetString("Training", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to University of Science.
+        /// </summary>
+        public static string UniversityScience {
+            get {
+                return ResourceManager.GetString("UniversityScience", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to UPDATE magazine (twice a year).
         /// </summary>
         public static string UpdateMagazine {
@@ -169,11 +367,20 @@ namespace WACLIM.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Visiting address.
+        ///   Looks up a localized string similar to Visit Address.
         /// </summary>
-        public static string VisitingAddress {
+        public static string VisitAddress {
             get {
-                return ResourceManager.GetString("VisitingAddress", resourceCulture);
+                return ResourceManager.GetString("VisitAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ward 4, District 5.
+        /// </summary>
+        public static string WardDistrict {
+            get {
+                return ResourceManager.GetString("WardDistrict", resourceCulture);
             }
         }
     }

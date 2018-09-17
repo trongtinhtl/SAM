@@ -1,25 +1,21 @@
 ﻿
 @{
-    ViewBag.Title = "GioiThieu";
+	ViewBag.Title = "GioiThieu";
+	Layout = "~/Views/Shared/_Layoutpage.cshtml";
 }
 
-<article id="page-content" style="padding-top:75px">
+<article id="page-content" >
     <header>
-        <div class="content-header-background clearfix paragraph--wrapper">
-            <div class="paragraph-item color--switch--possible">
-                <header>
-
-                    <h1>About IHE Delft</h1>
-
-                    <div class="leader-block-container">
-                        <div class="leader-block">
-                            <p>IHE Delft Institute for Water Education is the largest international graduate water education facility in the world and is based in Delft, the Netherlands. The Institute confers fully accredited MSc degrees, and PhD degrees in collaboration with partner universities.</p>
-                        </div>
-                        <div class="fact-list-container"></div>
-                    </div>
-                </header>
-            </div>
-        </div>
+		<div class="top">
+			<a class="back" href="@Url.Action("index", "home")">Back to Home</a>
+		</div>
+		<h1>About WACLIM</h1>
+		<div class="leader-block-container">
+			<div class="leader-block">
+				<p>WACLIM is the largest international graduate water education facility in the world and is based in Delft, the Netherlands. The Institute confers fully accredited MSc degrees, and PhD degrees in collaboration with partner universities. </p>
+			</div>
+			<div class="fact-list-container"></div>
+		</div>        
     </header>
 
     <div class="paragraph--wrapper">

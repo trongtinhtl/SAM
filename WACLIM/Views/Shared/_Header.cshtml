@@ -19,17 +19,17 @@
     <!-- begin wrapper -->
     <div class="wrapper">
         <a href="#" id="logo">
-            <img src="~/Assets/IHE/image/logo-unesco.svg" />
+            <img src="~/Assets/IHE/image/logo.png"  height="55"/>
         </a>
         <ul id="nav-main">
             <li class="">
-                <a href="@Url.Action("gioithieu", "home")"  class="non-subs">Giới thiệu</a>
+                <a href="@Url.Action("gioithieu", "home")"  class="non-subs">@WACLIM.Resources.Language.Introduction</a>
             </li>
             <li class="">
-                <a href="@Url.Action("index", "home")" class="non-subs">Tin tức-sự kiện</a>
+                <a href="@Url.Action("index", "home")" class="non-subs">@WACLIM.Resources.Language.News_Events</a>
             </li>
             <li>
-                <a href="@Url.Action("thanhvien","home")"  class="non-subs">Thành viên</a>
+                <a href="@Url.Action("thanhvien","home")"  class="non-subs">@WACLIM.Resources.Language.People</a>
 				@*<div class="nav-sub-container-wrapper">
                     <div class="nav-sub-container">
                         <div class="wrapper">
@@ -47,31 +47,32 @@
                 </div>*@
             </li>
             <li class="">
-                <a href="#">Nghiên cứu</a>
+                <a href="#">@WACLIM.Resources.Language.Research</a>
 				<div class="nav-sub-container-wrapper">
                     <div class="nav-sub-container">
                         <div class="wrapper">
                             <ul class="nav-sub">
-                                <li><a href="#">Đề tài/dự án</a></li>
-                                <li><a href="#">Nghiên cứu khoa học</a></li>
+                                <li><a href="#">@WACLIM.Resources.Language.ResearchThemes</a></li>
+								<li><a href="#">@WACLIM.Resources.Language.Projects</a></li>
+                                <li><a href="#">@WACLIM.Resources.Language.ScienceResearch</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </li>
             <li>
-                <a href="#"  class="non-subs">Tư vấn</a>
+                <a href="#"  class="non-subs">@WACLIM.Resources.Language.Support</a>
             </li>
 			<li class="">
-				<a href="#">Đào tạo</a>
+				<a href="#">@WACLIM.Resources.Language.Education</a>
 				<div class="nav-sub-container-wrapper">
 					<div class="nav-sub-container">
 						<div class="wrapper">
 							<ul class="nav-sub">
-								<li><a href="#">Giảng dạy</a></li>
-								<li><a href="#">Tập huấn</a></li>
-								<li><a href="#">Đề tài khóa luận/tiểu luận đại học</a></li>
-								<li><a href="#">Đề tài luận văn sau đại học</a></li>
+								<li><a href="#">@WACLIM.Resources.Language.Teaching</a></li>
+								<li><a href="#">@WACLIM.Resources.Language.Training</a></li>
+								<li><a href="#">@WACLIM.Resources.Language.DeTaiKhoaLuan</a></li>
+								<li><a href="#">@WACLIM.Resources.Language.DeTaiSauDaiHoc</a></li>
 							</ul>
 						</div>
 					</div>

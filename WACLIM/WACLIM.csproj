@@ -277,6 +277,7 @@
     <Content Include="Assets\IHE\image\bangalore_india.jpg" />
     <Content Include="Assets\IHE\image\graphics.jpg" />
     <Content Include="Assets\IHE\image\logo-unesco.svg" />
+    <Content Include="Assets\IHE\image\logo.png" />
     <Content Include="Assets\IHE\image\logo_footer.png" />
     <Content Include="Assets\IHE\image\news.jpg" />
     <Content Include="Assets\IHE\image\search.png" />
@@ -299,7 +300,6 @@
     <Content Include="Assets\css\slider.css" />
     <Content Include="Assets\css\style.css" />
     <Content Include="Assets\images\admin.jpg" />
-    <Content Include="Assets\images\logo.png" />
     <Content Include="Assets\js\GLOBAL.js" />
     <Content Include="Assets\js\vmodule.js" />
     <Content Include="Assets\plugins\bootstrap\css\bootstrap-grid.css" />
@@ -558,6 +558,8 @@
     <Content Include="Views\Home\NghienCuu.cshtml" />
     <Content Include="Views\Home\DaoTao.cshtml" />
     <Content Include="Views\Home\BanTinChiTiet.cshtml" />
+    <Content Include="Views\Home\TinTuc.cshtml" />
+    <Content Include="Views\Shared\_LayoutPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

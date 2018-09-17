@@ -78,16 +78,16 @@ namespace WACLIM.Controllers.API
 			{
 				if (vmBanTin != null &&  vmBanTin.Id != null)
 				{
-					var isSuccess = _provider.UpdateBanTin(Id, vmBanTin);
+					//var isSuccess = _provider.UpdateBanTin(Id, vmBanTin);
 
-					if (isSuccess)
-					{
-						return Json(new
-						{
-							success = true,
-							message = "Cập nhật bản tin thành công.",
-						});
-					}
+					//if (isSuccess)
+					//{
+					//	return Json(new
+					//	{
+					//		success = true,
+					//		message = "Cập nhật bản tin thành công.",
+					//	});
+					//}
 				}
 
 				return Json(new

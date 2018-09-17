@@ -117,11 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="City" xml:space="preserve">
+    <value>Ho Chi Minh City</value>
+  </data>
   <data name="ConnectWithUs" xml:space="preserve">
     <value>Connect with us</value>
   </data>
   <data name="Contact" xml:space="preserve">
     <value>Contact</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>VietNam</value>
+  </data>
+  <data name="DeTaiKhoaLuan" xml:space="preserve">
+    <value>Đề tài khóa luận/tiểu luận đại học</value>
+  </data>
+  <data name="DeTaiSauDaiHoc" xml:space="preserve">
+    <value>Đề tài sau đại học</value>
+  </data>
+  <data name="Directions" xml:space="preserve">
+    <value>Directions</value>
+  </data>
+  <data name="Education" xml:space="preserve">
+    <value>Education</value>
   </data>
   <data name="ENewsletter" xml:space="preserve">
     <value>E-newsletter (monthly)</value>
@@ -132,14 +150,44 @@
   <data name="FollowOurActivities" xml:space="preserve">
     <value>Follow our activities and share some of your own</value>
   </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="Logan" xml:space="preserve">
+    <value>WACLIM - Water quality modelling</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Log in</value>
   </data>
   <data name="NeverMissAThing" xml:space="preserve">
     <value>Never miss a thing!</value>
   </data>
+  <data name="News_Events" xml:space="preserve">
+    <value>News - Events</value>
+  </data>
+  <data name="People" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
   <data name="PostalAddress" xml:space="preserve">
     <value>Postal address</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="Research" xml:space="preserve">
+    <value>Research</value>
+  </data>
+  <data name="ResearchThemes" xml:space="preserve">
+    <value>Research Themes</value>
+  </data>
+  <data name="ScienceResearch" xml:space="preserve">
+    <value>Science Research</value>
   </data>
   <data name="Search" xml:space="preserve">
     <value>Search</value>
@@ -147,13 +195,34 @@
   <data name="SignUpForOurNewsletter" xml:space="preserve">
     <value>Sign up for our newsletter and online magazine to stay up-to-date</value>
   </data>
+  <data name="Street" xml:space="preserve">
+    <value>227 Nguyen Van Cu</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Go to SUBSCRIBE</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="Teaching" xml:space="preserve">
+    <value>Teaching</value>
+  </data>
+  <data name="Training" xml:space="preserve">
+    <value>Training</value>
+  </data>
+  <data name="UniversityScience" xml:space="preserve">
+    <value>University of Science</value>
+  </data>
   <data name="UpdateMagazine" xml:space="preserve">
     <value>UPDATE magazine (twice a year)</value>
   </data>
   <data name="Vietnamese" xml:space="preserve">
     <value>Vietnamese</value>
   </data>
-  <data name="VisitingAddress" xml:space="preserve">
-    <value>Visiting address</value>
+  <data name="VisitAddress" xml:space="preserve">
+    <value>Visit Address</value>
+  </data>
+  <data name="WardDistrict" xml:space="preserve">
+    <value>Ward 4, District 5</value>
   </data>
 </root>
