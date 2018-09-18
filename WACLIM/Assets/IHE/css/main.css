@@ -14090,7 +14090,9 @@ h3.green-block {
 }
 
 #content-header-background {
-	background-color: #7FD8CD !important;
+    /*background-color: #7FD8CD !important;*/
+    background-image: url('../image/bg2.jpg');
+    background-position: 10% 35%
 }
 
 .overview-block.blocklink:hover, .overview-block.blocklink:focus, .items .item:hover, .items .item:focus {

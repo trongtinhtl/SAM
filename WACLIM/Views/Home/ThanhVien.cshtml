@@ -1,16 +1,18 @@
 ﻿
 @{
     ViewBag.Title = "ThanhVien";
+    Layout = "~/Views/Shared/_Layoutpage.cshtml";
 }
 <article id="page-content" class="stories" style="padding-top: 60px;">
     <!-- start header -->
     <header>
+        <div class="top">
+            <a class="back" href="@Url.Action("index", "home")">Back to Home</a>
+        </div>
         <h1>People</h1>
         <div class="leader-block-container">
-            <div class="leader-block full-width" style="min-height: 96px;">
+            <div class="leader-block">
                 <p>IHE Delft's staff members are committed to bring water education, research and capacity development to a higher level. Together with its motivated PhD fellows, Alumni, Students and Partners, IHE Delft forms a strong knowledge network of water sector experts.</p>
-            </div>
-            <div class="fact-list-container" style="min-height: 96px;">
             </div>
         </div>
     </header>
@@ -21,10 +23,10 @@
                 <div class="person-container">
                     <h2 class="people">Staff in focus</h2>
                     <div class="person">
-                        <a href="emanuele-fantini">
+                        <a href="@Url.Action("chitietthanhvien", "home")">
                             <img src="https://www.un-ihe.org/sites/default/files/styles/unesco_profile_focus/public/efa_fantini_1.jpg?itok=0X0i52c7">
                         </a>
-                        <h4><a href="emanuele-fantini">Emanuele Fantini</a></h4>
+                        <h4><a href="@Url.Action("chitietthanhvien", "home")">Emanuele Fantini</a></h4>
                         <p class="extra">Lecturer</p>            <p>
                             Emanuele joined IHE Delft and the Water Governance Chair group in September 2015 as a Marie Curie Cofund Postdoc Fellow. He holds a PhD in political science from the University of Turin (Italy) and he used to live and work in Ethiopia. His background gave him an interest in using visual research methods to study water governance, political power and development in Ethiopia. Emanuele is currently working on a project on media, science, water conflict and cooperation in the Nile basin. Currently Emanuele coordinates the research of the Master’s in Water management and governance and the summer course on visual methods for water communication.
 
